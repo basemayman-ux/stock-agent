@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Agent</title>
+<style>
+  :root{--bg:#f4f5f7;--card:#fff;--ink:#16181d;--mute:#6b7280;--line:#e5e7eb;--green:#0f9d58;--red:#d93025;
+        --amber:#b26a00;--amberbg:#fff4e0;--greenbg:#e6f4ea;--redbg:#fce8e6;--chip:#eef0f3;--accent:#1f2a44}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--ink:#e8eaed;--mute:#9aa0a6;--line:#2a2e36;
+        --green:#34c26b;--red:#f2675b;--amber:#f0b14a;--amberbg:#2e2512;--greenbg:#12291b;--redbg:#2f1614;--chip:#22262e;--accent:#8ab4f8}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1100px;margin:0 auto;padding:16px}
+  header{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between;margin-bottom:12px}
+  h1{font-size:20px;margin:0}
+  .sub{color:var(--mute);font-size:13px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{background:var(--chip);border-radius:999px;padding:3px 10px;font-size:12px;white-space:nowrap}
+  .chip.demo{background:var(--amberbg);color:var(--amber);font-weight:600}
+  .chip.real{background:var(--redbg);color:var(--red);font-weight:700}
+  .chip.open{background:var(--greenbg);color:var(--green);font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .card.sig-long{border:2px solid var(--green)} .card.sig-short{border:2px solid var(--red)} .card.watch{border:2px dashed var(--amber)}
+  .top{display:flex;justify-content:space-between;align-items:flex-start}
+  .sym{font-size:20px;font-weight:700}
+  .px{font-size:20px;font-variant-numeric:tabular-nums;text-align:right}
+  .chg{font-size:13px;text-align:right}
+  .up{color:var(--green)} .dn{color:var(--red)}
+  .badge{display:inline-block;font-weight:700;font-size:12px;border-radius:6px;padding:3px 8px;margin:8px 0 4px}
+  .b-long{background:var(--greenbg);color:var(--green)} .b-short{background:var(--redbg);color:var(--red)}
+  .b-watch{background:var(--amberbg);color:var(--amber)} .b-none{background:var(--chip);color:var(--mute)}
+  .bars{display:grid;grid-template-columns:48px 1fr 30px;gap:4px 8px;align-items:center;font-size:12px;margin:6px 0}
+  .bar{height:8px;background:var(--chip);border-radius:4px;position:relative;overflow:hidden}
+  .bar i{position:absolute;inset:0 auto 0 0;border-radius:4px}
+  .bar .mark{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink);opacity:.35}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px;color:var(--mute)}
+  .kv b{color:var(--ink);font-weight:500}
+  .blocks{margin:8px 0 0;padding:0;list-style:none;font-size:12px;color:var(--mute)}
+  .blocks li::before{content:"⛔ "}
+  .plan{background:var(--chip);border-radius:8px;padding:8px;margin-top:8px;font-size:13px;font-variant-numeric:tabular-nums}
+  svg.spark{width:100%;height:42px;display:block;margin-top:6px}
+  section{margin-top:18px}
+  h2{font-size:15px;margin:0 0 8px}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+  th{color:var(--mute);font-weight:500}
+  .tablewrap{overflow-x:auto}
+  .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}
+  .stat .n{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+  .stat .l{font-size:12px;color:var(--mute)}
+  .err{background:var(--redbg);color:var(--red);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:13px}
+  a{color:var(--accent)}
+  footer{color:var(--mute);font-size:12px;margin:24px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1>📈 US Stocks Agent</h1><div class="sub" id="upd">Loading…</div></div>
+    <div class="chips" id="chips"></div>
+  </header>
+  <div id="errs"></div>
+  <div class="grid" id="cards"></div>
+
+  <section id="opensec" hidden><h2>🤖 Open auto-trades</h2><div class="tablewrap"><table id="open"></table></div></section>
+  <section><h2>Results (paper, every signal, after spread, in R)</h2><div class="stats" id="stats"></div></section>
+  <section><h2>Recent signals</h2><div class="tablewrap"><table id="recent"></table></div></section>
+  <section><h2>US news ahead (Dubai time)</h2><div id="news" class="sub"></div></section>
+  <footer>
+    Score ≥ 80 = trade (🟢/🔴). 75–79 = 👀 WATCH, do not trade. Exit: all out at 1R, stop to entry at 0.7R, flat before the US close.
+    No new trades the day before/of earnings, around big US news, in the first/last 15 minutes.
+    · <a href="data/Stocks_PL_tracker.xlsx">Download P/L workbook (password)</a>
+  </footer>
+</div>
+<script>
+const $ = s => document.getElementById(s);
+const f2 = x => x == null ? "–" : Number(x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const R = x => x == null ? "–" : (x > 0 ? "+" : "") + Number(x).toFixed(2) + "R";
+
+function spark(v){
+  v = (v||[]).filter(x => x != null); if (v.length < 2) return "";
+  const lo = Math.min(...v), hi = Math.max(...v), w = 300, h = 42, d = hi - lo || 1;
+  const pts = v.map((y,i) => `${(i/(v.length-1)*w).toFixed(1)},${(h-2-(y-lo)/d*(h-4)).toFixed(1)}`).join(" ");
+  const col = v[v.length-1] >= v[0] ? "var(--green)" : "var(--red)";
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polyline fill="none" stroke="${col}" stroke-width="1.6" points="${pts}"/></svg>`;
+}
+function bar(label, sc, col){
+  return `<span>${label}</span><div class="bar"><i style="width:${sc||0}%;background:${col}"></i>
+    <span class="mark" style="left:80%"></span></div><span>${sc ?? "–"}</span>`;
+}
+function card(c){
+  if (c.status === "ERROR") return `<div class="card"><div class="sym">${esc(c.sym)}</div><ul class="blocks">${(c.blocks||[]).map(b=>`<li>${esc(b)}</li>`).join("")}</ul></div>`;
+  const long = c.direction === "LONG";
+  let cls = "", badge = `<span class="badge b-none">NO TRADE</span>`;
+  if (c.status === "SIGNAL"){ cls = long ? "sig-long" : "sig-short";
+    badge = `<span class="badge ${long?"b-long":"b-short"}">${long?"🟢 BUY":"🔴 SELL SHORT"} · ${c.score}</span>`; }
+  else if (c.status === "WATCH"){ cls = "watch"; badge = `<span class="badge b-watch">👀 WATCH ${esc(c.direction)} · DO NOT TRADE</span>`; }
+  const chg = c.day_change;
+  const plan = c.plan ? `<div class="plan">Entry <b>${f2(c.plan.entry)}</b> · Stop <b>${f2(c.plan.sl)}</b> · Target <b>${f2(c.plan.tp)}</b><br>
+      Stop → entry at ${f2(c.plan.be_px)} · spread ${Math.round(c.plan.cost_r*100)}% of risk</div>` : "";
+  return `<div class="card ${cls}">
+    <div class="top"><div><div class="sym">${esc(c.sym)}</div><div class="sub">1h trend ${esc(c.trend||"–")}</div></div>
+      <div><div class="px">${f2(c.price)}</div><div class="chg ${chg>=0?"up":"dn"}">${chg==null?"":(chg>=0?"+":"")+chg.toFixed(2)+"%"}</div></div></div>
+    ${badge}
+    <div class="bars">${bar("Long", c.long?.score, "var(--green)")}${bar("Short", c.short?.score, "var(--red)")}</div>
+    <div class="kv"><span>Bid / Ask</span><b>${f2(c.bid)} / ${f2(c.ask)}</b>
+      <span>Spread</span><b>${c.spread==null?"–":c.spread.toFixed(3)} (${c.spread_pct==null?"–":c.spread_pct.toFixed(3)}%)</b>
+      <span>VWAP · RSI7</span><b>${f2(c.vwap)} · ${c.rsi7 ?? "–"}</b>
+      <span>Next earnings</span><b>${esc(c.next_earnings || "unknown")}</b></div>
+    ${plan}
+    ${spark(c.spark)}
+    <ul class="blocks">${(c.blocks||[]).map(b=>`<li>${esc(b)}</li>`).join("")}</ul>
+  </div>`;
+}
+function statBox(n, l){ return `<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`; }
+
+async function load(){
+  try{
+    const d = await (await fetch("data/signal.json?t=" + Date.now(), {cache:"no-store"})).json();
+    const m = d.market || {};
+    $("upd").textContent = `Updated ${d.updated_dubai || "–"} Dubai · market ${m.phase || "–"}` + (m.session_dubai ? ` · session ${m.session_dubai} Dubai` : "");
+    const mode = (d.autotrade && d.autotrade.mode) || (d.config && d.config.autotrade_mode) || "off";
+    $("chips").innerHTML = `<span class="chip ${m.open?"open":""}">${m.open?"● Market open":"○ Market closed"}</span>
+      <span class="chip ${mode==="demo"?"demo":mode==="real"?"real":""}">Auto-trade: ${mode.toUpperCase()}</span>
+      ${d.news && d.news.macro_now ? `<span class="chip real">News pause</span>` : ""}`;
+    $("errs").innerHTML = (d.errors||[]).map(e => `<div class="err">⚠️ ${esc(e)}</div>`).join("");
+    $("cards").innerHTML = (d.stocks||[]).map(card).join("");
+
+    const at = d.autotrade || {open:[]};
+    $("opensec").hidden = !(at.open||[]).length;
+    $("open").innerHTML = `<tr><th>Stock</th><th>Side</th><th>Entry</th><th>Stop</th><th>Target</th><th>Stop at entry?</th></tr>` +
+      (at.open||[]).map(t => `<tr><td>${esc(t.sym)}</td><td>${esc(t.dir)}</td><td>${f2(t.entry)}</td><td>${f2(t.sl)}</td><td>${f2(t.tp)}</td><td>${t.be?"yes":"no"}</td></tr>`).join("");
+
+    const s14 = (d.stats||{}).last_14_days || {}, all = (d.stats||{}).all_time || {};
+    const a = s14.all || {}, b = all.all || {};
+    $("stats").innerHTML = statBox(a.trades ?? 0, "Signals, last 14 days") + statBox(a.win_rate==null?"–":a.win_rate+"%", "Win rate (14 d)") +
+      statBox(R(a.net_r), "Net R (14 d)") + statBox(R(b.net_r), "Net R (all time, " + (b.trades||0) + " signals)") +
+      statBox(R(at.total_r), "Auto-trades net R (" + (at.total_trades||0) + ")") +
+      Object.keys(all).filter(k => k !== "all" && all[k].trades).map(k => statBox(R(all[k].net_r), `${k} · ${all[k].trades} signals`)).join("");
+
+    $("recent").innerHTML = `<tr><th>Time (Dubai)</th><th>Stock</th><th>Side</th><th>Score</th><th>Entry</th><th>Stop</th><th>Target</th><th>Result</th></tr>` +
+      ((d.recent||[]).length ? d.recent.map(s => {
+        const t = new Date(s.time_utc).toLocaleString("en-GB",{timeZone:"Asia/Dubai",weekday:"short",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"});
+        const res = s.status === "open" ? "open" : `${esc(s.result||"")} ${R(s.r)}`;
+        return `<tr><td>${t}</td><td>${esc(s.sym)}</td><td class="${s.direction==="LONG"?"up":"dn"}">${esc(s.direction)}</td><td>${s.score}</td>
+          <td>${f2(s.entry)}</td><td>${f2(s.sl)}</td><td>${f2(s.tp)}</td><td class="${s.r>0?"up":s.r<0?"dn":""}">${res}</td></tr>`;}).join("")
+        : `<tr><td colspan="8" class="sub">No signals yet.</td></tr>`);
+
+    const nw = (d.news||{}).upcoming || [];
+    $("news").innerHTML = (d.news && d.news.macro_now ? `<b>Now: ${esc(d.news.macro_now)}</b><br>` : "") +
+      (nw.length ? nw.map(e => `${esc(e.dubai)} · ${esc(e.title)}`).join("<br>") : "No high-impact US releases in the next 36 hours.");
+  } catch(e){ $("upd").textContent = "Waiting for the first run of the agent…"; }
+}
+load(); setInterval(load, 60000);
+</script>
+</body>
+</html>

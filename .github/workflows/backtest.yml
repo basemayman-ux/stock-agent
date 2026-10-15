@@ -1,0 +1,31 @@
+name: Backtest (last 60 days)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Replay the live rules on real 5-minute data
+        run: python engine/backtest.py
+      - name: Save results
+        run: |
+          git config user.name "stock-agent"
+          git config user.email "stock-agent@users.noreply.github.com"
+          git add docs/data/backtest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "backtest $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi

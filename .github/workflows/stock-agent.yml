@@ -1,0 +1,67 @@
+name: Stock agent
+
+on:
+  # Main timer = cron-job.org (every 5 min, Mon–Fri, 13:00–21:00 UTC). This GitHub schedule is only a backup.
+  schedule:
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Send an ntfy test message"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stock-agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run stock signal engine
+        run: python engine/agent.py
+        env:
+          ACCOUNT_EQUITY: ${{ secrets.ACCOUNT_EQUITY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ETORO_API_KEY: ${{ secrets.ETORO_API_KEY }}
+          ETORO_USER_KEY: ${{ secrets.ETORO_USER_KEY }}
+          ETORO_ALLOW_REAL: ${{ secrets.ETORO_ALLOW_REAL }}
+          TEST_ALERT: ${{ inputs.test_alert }}
+
+      - name: Update eToro P/L workbook
+        run: python engine/etoro_trades.py || true
+        env:
+          ETORO_API_KEY: ${{ secrets.ETORO_API_KEY }}
+          ETORO_USER_KEY: ${{ secrets.ETORO_USER_KEY }}
+          XLSX_PASSWORD: ${{ secrets.XLSX_PASSWORD }}
+
+      - name: Commit results
+        run: |
+          # Publish to the website every 10 min (GitHub Pages limit), or at once when an alert was sent.
+          MIN=$(date -u +%M)
+          if [ ! -f /tmp/force_commit ] && [ $(( 10#$MIN % 10 )) -ge 5 ]; then
+            echo "No alert this run; website update skipped until the next 10-minute mark."
+            exit 0
+          fi
+          git config user.name "stock-agent"
+          git config user.email "stock-agent@users.noreply.github.com"
+          git add docs/data
+          if ! git diff --cached --quiet; then
+            git commit -m "signal $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase
+            git push
+          fi

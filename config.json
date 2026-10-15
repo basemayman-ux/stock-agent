@@ -1,0 +1,55 @@
+{
+  "stocks": ["NVDA", "AMZN", "TSLA", "MSFT", "META"],
+  "instrument_ids": {},
+
+  "risk_pct": 0.5,
+  "min_trade_score": 80,
+  "watch_min_score": 75,
+  "watch_cooldown_minutes": 60,
+  "signal_cooldown_minutes": 60,
+  "max_signals_per_day": 4,
+  "max_signals_per_stock_per_day": 1,
+  "daily_loss_stop_r": 2.0,
+
+  "require_htf_trend": true,
+  "skip_first_minutes": 15,
+  "skip_last_minutes": 15,
+  "flatten_minutes_before_close": 10,
+  "hold_overnight": false,
+  "allow_short": true,
+  "gap_block_pct": 3.0,
+  "gap_block_until_et": "10:30",
+
+  "min_stop_pct": 0.25,
+  "min_stop_spread_mult": 8,
+  "min_stop_atr": 0.6,
+  "max_stop_atr": 3.0,
+  "max_spread_pct": 0.12,
+  "max_cost_share_of_r": 0.15,
+  "be_at_r": 0.7,
+  "target_r": 1.0,
+
+  "news_block_before_min": 30,
+  "news_block_after_min": 30,
+  "premarket_news_block_until_et": "10:00",
+  "earnings_block": "day before and day of",
+  "earnings_dates": {},
+  "block_if_earnings_unknown": false,
+
+  "default_spread_per_share": {"NVDA": 0.05, "AMZN": 0.05, "TSLA": 0.10, "MSFT": 0.10, "META": 0.20},
+  "pl_history_from": "2026-10-15",
+
+  "autotrade": {
+    "mode": "demo",
+    "leverage": 2,
+    "max_open_total": 2,
+    "max_open_per_stock": 1,
+    "max_trades_per_day": 4,
+    "max_trades_per_stock_per_day": 1,
+    "daily_loss_stop_r": 2.0,
+    "max_position_pct_of_equity": 100,
+    "real_risk_pct": 0.25,
+    "real_max_trades_per_day": 2,
+    "real_daily_loss_stop_r": 1.0
+  }
+}
