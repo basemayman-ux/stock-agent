@@ -1,0 +1,926 @@
+{
+ "run_utc": "2026-10-18T09:24:47.885795+00:00",
+ "total": {
+  "trades": 100,
+  "win_rate": 36,
+  "net_r": -12.36,
+  "gross_r": -8.4,
+  "avg_r": -0.124,
+  "profit_factor": 0.7,
+  "max_drawdown_r": 18.17,
+  "spread_cost_r": 3.96,
+  "exits": {
+   "stop": 37,
+   "target": 28,
+   "end of day": 19,
+   "breakeven": 16
+  },
+  "longs": 64,
+  "shorts": 36
+ },
+ "per_stock": {
+  "NVDA": {
+   "trades": 19,
+   "win_rate": 37,
+   "net_r": -1.25,
+   "gross_r": -0.59,
+   "avg_r": -0.066,
+   "profit_factor": 0.84,
+   "max_drawdown_r": 4.21,
+   "spread_cost_r": 0.66,
+   "exits": {
+    "stop": 7,
+    "target": 7,
+    "breakeven": 4,
+    "end of day": 1
+   },
+   "longs": 12,
+   "shorts": 7,
+   "days": 60
+  },
+  "AMZN": {
+   "trades": 21,
+   "win_rate": 57,
+   "net_r": 1.93,
+   "gross_r": 2.73,
+   "avg_r": 0.092,
+   "profit_factor": 1.29,
+   "max_drawdown_r": 2.51,
+   "spread_cost_r": 0.8,
+   "exits": {
+    "target": 8,
+    "end of day": 7,
+    "stop": 6
+   },
+   "longs": 8,
+   "shorts": 13,
+   "days": 60
+  },
+  "TSLA": {
+   "trades": 24,
+   "win_rate": 25,
+   "net_r": -7.11,
+   "gross_r": -6.13,
+   "avg_r": -0.296,
+   "profit_factor": 0.41,
+   "max_drawdown_r": 8.94,
+   "spread_cost_r": 0.98,
+   "exits": {
+    "stop": 11,
+    "breakeven": 5,
+    "target": 5,
+    "end of day": 3
+   },
+   "longs": 19,
+   "shorts": 5,
+   "days": 60
+  },
+  "MSFT": {
+   "trades": 20,
+   "win_rate": 30,
+   "net_r": -4.21,
+   "gross_r": -3.48,
+   "avg_r": -0.211,
+   "profit_factor": 0.52,
+   "max_drawdown_r": 6.53,
+   "spread_cost_r": 0.74,
+   "exits": {
+    "stop": 8,
+    "end of day": 5,
+    "target": 4,
+    "breakeven": 3
+   },
+   "longs": 13,
+   "shorts": 7,
+   "days": 60
+  },
+  "META": {
+   "trades": 16,
+   "win_rate": 31,
+   "net_r": -1.72,
+   "gross_r": -0.94,
+   "avg_r": -0.107,
+   "profit_factor": 0.72,
+   "max_drawdown_r": 5.11,
+   "spread_cost_r": 0.78,
+   "exits": {
+    "stop": 5,
+    "target": 4,
+    "breakeven": 4,
+    "end of day": 3
+   },
+   "longs": 12,
+   "shorts": 4,
+   "days": 60
+  }
+ },
+ "rules": {
+  "min_trade_score": 80,
+  "target_r": 1.0,
+  "be_at_r": 0.7,
+  "require_htf_trend": true,
+  "allow_short": true
+ },
+ "trades": [
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-07-31T14:35:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.01
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-07-31T15:25:30+00:00",
+   "direction": "SHORT",
+   "score": 82,
+   "result": "stop",
+   "r": -1.017
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-03T14:05:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.016
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-03T19:30:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "end of day",
+   "r": 0.493
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-08-04T14:50:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.979
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-04T19:35:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "end of day",
+   "r": 0.341
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-05T15:25:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.036
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-06T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 93,
+   "result": "stop",
+   "r": -1.024
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-06T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.03
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-07T14:20:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.956
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-08-07T15:20:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "breakeven",
+   "r": -0.052
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-10T13:50:30+00:00",
+   "direction": "LONG",
+   "score": 80,
+   "result": "breakeven",
+   "r": -0.03
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-10T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.981
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-10T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "breakeven",
+   "r": -0.02
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-10T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 93,
+   "result": "target",
+   "r": 0.962
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-11T13:50:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.967
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-11T14:45:30+00:00",
+   "direction": "LONG",
+   "score": 83,
+   "result": "end of day",
+   "r": 0.318
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-08-12T14:30:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.02
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-13T14:45:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.934
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-13T19:40:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "end of day",
+   "r": -0.247
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-14T14:25:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "target",
+   "r": 0.965
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-08-14T14:45:30+00:00",
+   "direction": "LONG",
+   "score": 80,
+   "result": "end of day",
+   "r": -0.613
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-14T18:25:30+00:00",
+   "direction": "LONG",
+   "score": 90,
+   "result": "stop",
+   "r": -1.076
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-08-17T13:45:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.959
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-17T14:30:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "target",
+   "r": 0.931
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-17T14:35:30+00:00",
+   "direction": "SHORT",
+   "score": 80,
+   "result": "target",
+   "r": 0.957
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-18T14:40:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.043
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-18T17:40:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "end of day",
+   "r": 0.542
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-18T19:25:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "end of day",
+   "r": 0.015
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-19T14:05:30+00:00",
+   "direction": "LONG",
+   "score": 88,
+   "result": "target",
+   "r": 0.974
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-19T17:20:30+00:00",
+   "direction": "SHORT",
+   "score": 80,
+   "result": "end of day",
+   "r": -0.013
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-20T14:00:30+00:00",
+   "direction": "SHORT",
+   "score": 93,
+   "result": "end of day",
+   "r": -0.182
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-20T14:05:30+00:00",
+   "direction": "SHORT",
+   "score": 89,
+   "result": "breakeven",
+   "r": -0.042
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-20T15:10:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "stop",
+   "r": -1.025
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-20T15:20:30+00:00",
+   "direction": "LONG",
+   "score": 82,
+   "result": "breakeven",
+   "r": -0.027
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-08-20T15:25:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "breakeven",
+   "r": -0.033
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-21T14:40:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "stop",
+   "r": -1.027
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-08-21T15:20:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "stop",
+   "r": -1.031
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-21T18:10:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "stop",
+   "r": -1.125
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-25T13:45:30+00:00",
+   "direction": "LONG",
+   "score": 93,
+   "result": "breakeven",
+   "r": -0.028
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-08-28T13:45:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.043
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-08-28T14:50:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.977
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-08-31T15:15:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "target",
+   "r": 0.941
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-01T14:05:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "end of day",
+   "r": -0.324
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-01T14:10:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.976
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-02T14:20:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "end of day",
+   "r": 0.229
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-02T14:40:30+00:00",
+   "direction": "SHORT",
+   "score": 80,
+   "result": "end of day",
+   "r": -0.133
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-02T19:05:30+00:00",
+   "direction": "LONG",
+   "score": 80,
+   "result": "breakeven",
+   "r": -0.062
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-03T14:55:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "breakeven",
+   "r": -0.026
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-04T14:30:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.028
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-08T14:05:30+00:00",
+   "direction": "LONG",
+   "score": 93,
+   "result": "stop",
+   "r": -1.041
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-09T13:55:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "target",
+   "r": 0.952
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-09T14:50:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.032
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-10T14:10:30+00:00",
+   "direction": "SHORT",
+   "score": 93,
+   "result": "stop",
+   "r": -1.034
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-10T14:25:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.019
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-10T14:35:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.039
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-10T19:00:30+00:00",
+   "direction": "SHORT",
+   "score": 90,
+   "result": "target",
+   "r": 0.906
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-11T14:35:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "target",
+   "r": 0.976
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-11T14:50:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "stop",
+   "r": -1.036
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-15T14:00:30+00:00",
+   "direction": "SHORT",
+   "score": 89,
+   "result": "target",
+   "r": 0.95
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-15T14:45:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "breakeven",
+   "r": -0.042
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-15T14:55:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "breakeven",
+   "r": -0.049
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-15T16:00:30+00:00",
+   "direction": "LONG",
+   "score": 83,
+   "result": "stop",
+   "r": -1.045
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-16T14:00:30+00:00",
+   "direction": "LONG",
+   "score": 89,
+   "result": "stop",
+   "r": -1.027
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-16T18:15:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "target",
+   "r": 0.961
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-17T15:20:30+00:00",
+   "direction": "LONG",
+   "score": 84,
+   "result": "breakeven",
+   "r": -0.043
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-18T13:45:30+00:00",
+   "direction": "LONG",
+   "score": 95,
+   "result": "stop",
+   "r": -1.028
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-21T14:40:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "stop",
+   "r": -1.034
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-21T15:00:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.967
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-21T16:20:30+00:00",
+   "direction": "LONG",
+   "score": 82,
+   "result": "target",
+   "r": 0.957
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-21T19:35:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.063
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-23T15:20:30+00:00",
+   "direction": "LONG",
+   "score": 80,
+   "result": "breakeven",
+   "r": -0.028
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-23T19:40:30+00:00",
+   "direction": "SHORT",
+   "score": 88,
+   "result": "end of day",
+   "r": 0.165
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-24T14:10:30+00:00",
+   "direction": "LONG",
+   "score": 82,
+   "result": "stop",
+   "r": -1.043
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-09-24T14:55:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "stop",
+   "r": -1.021
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-25T14:10:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "stop",
+   "r": -1.031
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-25T16:05:30+00:00",
+   "direction": "LONG",
+   "score": 82,
+   "result": "breakeven",
+   "r": -0.029
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-25T16:40:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.075
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-28T15:10:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "breakeven",
+   "r": -0.023
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-09-28T19:05:30+00:00",
+   "direction": "SHORT",
+   "score": 95,
+   "result": "end of day",
+   "r": -0.128
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-09-29T14:45:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.023
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-09-29T19:25:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "end of day",
+   "r": -0.087
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-09-30T17:40:30+00:00",
+   "direction": "LONG",
+   "score": 83,
+   "result": "stop",
+   "r": -1.059
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-10-06T14:40:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "stop",
+   "r": -1.049
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-10-06T17:35:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "end of day",
+   "r": -0.261
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-10-07T17:30:30+00:00",
+   "direction": "LONG",
+   "score": 84,
+   "result": "target",
+   "r": 0.942
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-10-07T18:55:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "end of day",
+   "r": -0.436
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-10-08T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 88,
+   "result": "stop",
+   "r": -1.042
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-10-08T14:40:30+00:00",
+   "direction": "LONG",
+   "score": 89,
+   "result": "stop",
+   "r": -1.055
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-10-09T14:10:30+00:00",
+   "direction": "LONG",
+   "score": 85,
+   "result": "target",
+   "r": 0.98
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-10-09T14:15:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "target",
+   "r": 0.971
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-10-12T15:15:30+00:00",
+   "direction": "LONG",
+   "score": 81,
+   "result": "breakeven",
+   "r": -0.058
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-10-13T15:05:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "stop",
+   "r": -1.042
+  },
+  {
+   "sym": "META",
+   "time_utc": "2026-10-13T18:10:30+00:00",
+   "direction": "LONG",
+   "score": 80,
+   "result": "end of day",
+   "r": -0.381
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-10-14T14:30:30+00:00",
+   "direction": "SHORT",
+   "score": 85,
+   "result": "target",
+   "r": 0.941
+  },
+  {
+   "sym": "MSFT",
+   "time_utc": "2026-10-15T15:10:30+00:00",
+   "direction": "LONG",
+   "score": 80,
+   "result": "end of day",
+   "r": 0.465
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-10-15T16:35:30+00:00",
+   "direction": "SHORT",
+   "score": 86,
+   "result": "stop",
+   "r": -1.032
+  },
+  {
+   "sym": "TSLA",
+   "time_utc": "2026-10-16T15:05:30+00:00",
+   "direction": "SHORT",
+   "score": 93,
+   "result": "target",
+   "r": 0.98
+  },
+  {
+   "sym": "NVDA",
+   "time_utc": "2026-10-16T15:20:30+00:00",
+   "direction": "SHORT",
+   "score": 81,
+   "result": "target",
+   "r": 0.974
+  },
+  {
+   "sym": "AMZN",
+   "time_utc": "2026-10-16T16:05:30+00:00",
+   "direction": "SHORT",
+   "score": 82,
+   "result": "target",
+   "r": 0.969
+  }
+ ]
+}
