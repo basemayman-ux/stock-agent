@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-10-20T19:21:00+00:00",
- "updated_dubai": "Tue 20 Oct, 23:21",
+ "updated_utc": "2026-10-20T19:31:26+00:00",
+ "updated_dubai": "Tue 20 Oct, 23:31",
  "market": {
   "phase": "open",
   "open": true,
@@ -11,20 +11,18 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [],
-   "price": 217.07,
-   "bid": 217.07,
-   "ask": 217.08,
-   "spread": 0.01,
-   "spread_pct": 0.005,
+   "price": 217.18,
+   "bid": 217.17,
+   "ask": 217.19,
+   "spread": 0.02,
+   "spread_pct": 0.009,
    "trend": "DOWN",
    "vwap": 216.27,
-   "rsi7": 38.0,
-   "atr": 0.298,
-   "day_change": -0.25,
-   "bar_utc": "2026-10-20T19:15:00+00:00",
+   "rsi7": 27.0,
+   "atr": 0.297,
+   "day_change": -0.37,
+   "bar_utc": "2026-10-20T19:25:00+00:00",
    "spark": [
-    218.3,
-    217.95,
     218.04,
     218.21,
     217.92,
@@ -100,16 +98,18 @@
     216.71,
     216.7,
     216.51,
-    216.55
+    216.55,
+    216.39,
+    216.29
    ],
    "next_earnings": "2026-11-17",
    "gap_pct": -0.52,
    "long": {
-    "score": 20,
+    "score": 35,
     "parts": {
      "trend": 0,
      "structure": 0,
-     "sweep": 0,
+     "sweep": 15,
      "momentum": 0,
      "vwap": 15,
      "volume": 0,
@@ -118,15 +118,17 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.7\u00d7 normal"
+     "swept 216.28 and reclaimed it",
+     "volume 0.9\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 48,
+    "score": 63,
     "parts": {
      "trend": 20,
      "structure": 8,
-     "sweep": 0,
+     "sweep": 15,
      "momentum": 15,
      "vwap": 0,
      "volume": 0,
@@ -135,12 +137,12 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.7\u00d7 normal",
-     "last bar not in trade direction"
+     "swept 216.36 and reclaimed it",
+     "volume 0.9\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 48
+   "score": 63
   },
   {
    "sym": "AMZN",
@@ -148,20 +150,18 @@
    "blocks": [
     "already had a signal today"
    ],
-   "price": 263.39,
-   "bid": 263.39,
-   "ask": 263.4,
-   "spread": 0.01,
-   "spread_pct": 0.004,
+   "price": 263.27,
+   "bid": 263.26,
+   "ask": 263.29,
+   "spread": 0.03,
+   "spread_pct": 0.011,
    "trend": "UP",
    "vwap": 262.93,
-   "rsi7": 58.0,
-   "atr": 0.288,
-   "day_change": 0.13,
-   "bar_utc": "2026-10-20T19:15:00+00:00",
+   "rsi7": 36.0,
+   "atr": 0.287,
+   "day_change": -0.01,
+   "bar_utc": "2026-10-20T19:25:00+00:00",
    "spark": [
-    263.37,
-    263.38,
     263.44,
     263.21,
     263.14,
@@ -237,17 +237,19 @@
     262.69,
     262.65,
     262.61,
-    262.74
+    262.74,
+    262.41,
+    262.36
    ],
    "next_earnings": "2026-10-29",
    "gap_pct": 0.62,
    "long": {
-    "score": 33,
+    "score": 25,
     "parts": {
      "trend": 20,
      "structure": 0,
      "sweep": 0,
-     "momentum": 8,
+     "momentum": 0,
      "vwap": 0,
      "volume": 0,
      "volatility": 0,
@@ -255,16 +257,17 @@
     },
     "notes": [
      "1h trend UP",
-     "volume 0.7\u00d7 normal"
+     "volume 1.0\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 20,
+    "score": 35,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
-     "momentum": 0,
+     "momentum": 15,
      "vwap": 15,
      "volume": 0,
      "volatility": 0,
@@ -272,13 +275,11 @@
     },
     "notes": [
      "1h trend UP",
-     "volume 0.7\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 1.0\u00d7 normal"
     ]
    },
-   "direction": "LONG",
-   "score": 33,
-   "plan_issue": "stop too wide (3.2 ATR)"
+   "direction": "SHORT",
+   "score": 35
   },
   {
    "sym": "TSLA",
@@ -286,20 +287,18 @@
    "blocks": [
     "earnings next trading day"
    ],
-   "price": 375.13,
-   "bid": 375.12,
-   "ask": 375.14,
-   "spread": 0.02,
-   "spread_pct": 0.005,
+   "price": 375.25,
+   "bid": 375.21,
+   "ask": 375.29,
+   "spread": 0.08,
+   "spread_pct": 0.021,
    "trend": "NEUTRAL",
-   "vwap": 372.87,
-   "rsi7": 56.0,
-   "atr": 0.503,
-   "day_change": 1.97,
-   "bar_utc": "2026-10-20T19:15:00+00:00",
+   "vwap": 372.91,
+   "rsi7": 45.0,
+   "atr": 0.542,
+   "day_change": 1.87,
+   "bar_utc": "2026-10-20T19:25:00+00:00",
    "spark": [
-    368.8,
-    368.28,
     368.48,
     369.0,
     368.96,
@@ -375,34 +374,18 @@
     375.61,
     375.49,
     375.24,
-    375.35
+    375.35,
+    374.62,
+    374.96
    ],
    "next_earnings": "2026-10-21",
    "gap_pct": 0.53,
    "long": {
-    "score": 17,
+    "score": 10,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
-     "momentum": 7,
-     "vwap": 0,
-     "volume": 0,
-     "volatility": 5,
-     "session": 5
-    },
-    "notes": [
-     "1h trend NEUTRAL",
-     "too far from VWAP (chasing)",
-     "volume 0.6\u00d7 normal"
-    ]
-   },
-   "short": {
-    "score": 25,
-    "parts": {
-     "trend": 0,
-     "structure": 0,
-     "sweep": 15,
      "momentum": 0,
      "vwap": 0,
      "volume": 0,
@@ -411,32 +394,47 @@
     },
     "notes": [
      "1h trend NEUTRAL",
-     "swept 375.77 and reclaimed it",
-     "volume 0.6\u00d7 normal",
+     "too far from VWAP (chasing)",
+     "volume 1.1\u00d7 normal"
+    ]
+   },
+   "short": {
+    "score": 18,
+    "parts": {
+     "trend": 0,
+     "structure": 0,
+     "sweep": 0,
+     "momentum": 8,
+     "vwap": 0,
+     "volume": 0,
+     "volatility": 5,
+     "session": 5
+    },
+    "notes": [
+     "1h trend NEUTRAL",
+     "volume 1.1\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "direction": "SHORT",
-   "score": 25
+   "score": 18
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [],
-   "price": 531.11,
-   "bid": 531.06,
-   "ask": 531.15,
-   "spread": 0.09,
-   "spread_pct": 0.017,
+   "price": 530.64,
+   "bid": 530.58,
+   "ask": 530.71,
+   "spread": 0.13,
+   "spread_pct": 0.024,
    "trend": "NEUTRAL",
-   "vwap": 531.22,
-   "rsi7": 36.0,
-   "atr": 0.552,
-   "day_change": -0.39,
-   "bar_utc": "2026-10-20T19:15:00+00:00",
+   "vwap": 531.21,
+   "rsi7": 24.0,
+   "atr": 0.573,
+   "day_change": -0.55,
+   "bar_utc": "2026-10-20T19:25:00+00:00",
    "spark": [
-    534.55,
-    534.15,
     534.49,
     534.46,
     534.3,
@@ -512,47 +510,50 @@
     532.07,
     531.56,
     531.67,
-    531.39
+    531.39,
+    530.7,
+    530.58
    ],
    "next_earnings": "2026-10-28",
    "gap_pct": 0.0,
    "long": {
-    "score": 25,
+    "score": 16,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
      "momentum": 0,
-     "vwap": 15,
-     "volume": 0,
+     "vwap": 0,
+     "volume": 6,
      "volatility": 5,
      "session": 5
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.8\u00d7 normal",
+     "volume 1.4\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 33,
+    "score": 61,
     "parts": {
      "trend": 0,
-     "structure": 8,
+     "structure": 15,
      "sweep": 0,
      "momentum": 15,
-     "vwap": 0,
-     "volume": 0,
+     "vwap": 15,
+     "volume": 6,
      "volatility": 5,
      "session": 5
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.8\u00d7 normal"
+     "broke the last swing low",
+     "volume 1.4\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 33
+   "score": 61
   },
   {
    "sym": "META",
@@ -560,20 +561,18 @@
    "blocks": [
     "earnings next trading day"
    ],
-   "price": 689.0,
-   "bid": 688.95,
-   "ask": 689.05,
-   "spread": 0.1,
-   "spread_pct": 0.015,
+   "price": 688.81,
+   "bid": 688.69,
+   "ask": 688.93,
+   "spread": 0.24,
+   "spread_pct": 0.035,
    "trend": "DOWN",
-   "vwap": 689.53,
-   "rsi7": 49.0,
-   "atr": 0.82,
-   "day_change": -2.26,
-   "bar_utc": "2026-10-20T19:15:00+00:00",
+   "vwap": 689.52,
+   "rsi7": 35.0,
+   "atr": 0.834,
+   "day_change": -2.35,
+   "bar_utc": "2026-10-20T19:25:00+00:00",
    "spark": [
-    705.91,
-    705.52,
     705.88,
     705.96,
     705.89,
@@ -649,49 +648,50 @@
     689.28,
     689.2,
     688.91,
-    689.46
+    689.46,
+    689.06,
+    688.81
    ],
    "next_earnings": "2026-10-21",
    "gap_pct": -1.58,
    "long": {
-    "score": 25,
+    "score": 16,
     "parts": {
      "trend": 0,
      "structure": 0,
-     "sweep": 15,
+     "sweep": 0,
      "momentum": 0,
      "vwap": 0,
-     "volume": 0,
+     "volume": 6,
      "volatility": 5,
      "session": 5
     },
     "notes": [
      "1h trend DOWN",
-     "swept 689.00 and reclaimed it",
-     "volume 1.1\u00d7 normal"
+     "volume 1.4\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 67,
+    "score": 73,
     "parts": {
      "trend": 20,
      "structure": 15,
      "sweep": 0,
      "momentum": 7,
      "vwap": 15,
-     "volume": 0,
+     "volume": 6,
      "volatility": 5,
      "session": 5
     },
     "notes": [
      "1h trend DOWN",
      "broke the last swing low",
-     "volume 1.1\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 1.4\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 67
+   "score": 73
   }
  ],
  "errors": [],
@@ -814,23 +814,23 @@
  "spreads": {
   "NVDA": {
    "median": 0.02,
-   "samples": 79
+   "samples": 80
   },
   "AMZN": {
    "median": 0.04,
-   "samples": 79
+   "samples": 80
   },
   "TSLA": {
    "median": 0.06,
-   "samples": 79
+   "samples": 80
   },
   "MSFT": {
-   "median": 0.08,
-   "samples": 79
+   "median": 0.085,
+   "samples": 80
   },
   "META": {
    "median": 0.18,
-   "samples": 79
+   "samples": 80
   }
  },
  "config": {
