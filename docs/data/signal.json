@@ -1,9 +1,9 @@
 {
- "updated_utc": "2026-10-20T13:21:07+00:00",
- "updated_dubai": "Tue 20 Oct, 17:21",
+ "updated_utc": "2026-10-20T13:31:20+00:00",
+ "updated_dubai": "Tue 20 Oct, 17:31",
  "market": {
-  "phase": "pre-market",
-  "open": false,
+  "phase": "open",
+  "open": true,
   "session_dubai": "17:30\u201300:00"
  },
  "stocks": [
@@ -11,13 +11,14 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 216.15,
-   "bid": 216.1,
-   "ask": 216.2,
-   "spread": 0.1,
-   "spread_pct": 0.046,
+   "price": 216.31,
+   "bid": 216.28,
+   "ask": 216.34,
+   "spread": 0.06,
+   "spread_pct": 0.028,
    "trend": "DOWN",
    "vwap": 217.51,
    "rsi7": 33.0,
@@ -143,19 +144,20 @@
    },
    "direction": "SHORT",
    "score": 58,
-   "plan_issue": "stop too wide (5.6 ATR)"
+   "plan_issue": "stop too wide (5.1 ATR)"
   },
   {
    "sym": "AMZN",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 263.62,
-   "bid": 263.5,
-   "ask": 263.75,
-   "spread": 0.25,
-   "spread_pct": 0.095,
+   "price": 264.08,
+   "bid": 263.98,
+   "ask": 264.18,
+   "spread": 0.2,
+   "spread_pct": 0.076,
    "trend": "UP",
    "vwap": 261.15,
    "rsi7": 34.0,
@@ -283,20 +285,21 @@
    },
    "direction": "SHORT",
    "score": 43,
-   "plan_issue": "stop too wide (4.5 ATR)"
+   "plan_issue": "stop too wide (3.6 ATR)"
   },
   {
    "sym": "TSLA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "earnings next trading day"
    ],
-   "price": 369.85,
-   "bid": 369.75,
-   "ask": 369.95,
-   "spread": 0.2,
-   "spread_pct": 0.054,
+   "price": 369.25,
+   "bid": 369.07,
+   "ask": 369.42,
+   "spread": 0.35,
+   "spread_pct": 0.095,
    "trend": "NEUTRAL",
    "vwap": 365.63,
    "rsi7": 47.0,
@@ -423,19 +426,21 @@
     ]
    },
    "direction": "SHORT",
-   "score": 43
+   "score": 43,
+   "plan_issue": "stop too wide (3.6 ATR)"
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 533.91,
-   "bid": 533.71,
-   "ask": 534.11,
-   "spread": 0.4,
-   "spread_pct": 0.075,
+   "price": 533.65,
+   "bid": 533.51,
+   "ask": 533.8,
+   "spread": 0.29,
+   "spread_pct": 0.054,
    "trend": "UP",
    "vwap": 533.28,
    "rsi7": 32.0,
@@ -562,21 +567,21 @@
    },
    "direction": "LONG",
    "score": 55,
-   "plan_issue": "stop too wide (6.5 ATR)"
+   "plan_issue": "stop too wide (4.7 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "earnings next trading day",
-    "spread too wide (0.20%)"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "earnings next trading day"
    ],
-   "price": 696.97,
-   "bid": 696.27,
-   "ask": 697.67,
-   "spread": 1.4,
-   "spread_pct": 0.201,
+   "price": 693.08,
+   "bid": 692.67,
+   "ask": 693.48,
+   "spread": 0.81,
+   "spread_pct": 0.117,
    "trend": "DOWN",
    "vwap": 701.99,
    "rsi7": 49.0,
@@ -704,7 +709,7 @@
    },
    "direction": "SHORT",
    "score": 71,
-   "plan_issue": "stop too wide (10.4 ATR)"
+   "plan_issue": "stop too wide (13.3 ATR)"
   }
  ],
  "errors": [],
@@ -814,23 +819,23 @@
  "spreads": {
   "NVDA": {
    "median": 0.03,
-   "samples": 41
+   "samples": 42
   },
   "AMZN": {
-   "median": 0.03,
-   "samples": 41
+   "median": 0.035,
+   "samples": 42
   },
   "TSLA": {
    "median": 0.06,
-   "samples": 41
+   "samples": 42
   },
   "MSFT": {
    "median": 0.07,
-   "samples": 41
+   "samples": 42
   },
   "META": {
    "median": 0.18,
-   "samples": 41
+   "samples": 42
   }
  },
  "config": {
