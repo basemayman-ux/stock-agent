@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-10-23T16:50:56+00:00",
- "updated_dubai": "Fri 23 Oct, 20:50",
+ "updated_utc": "2026-10-23T16:55:48+00:00",
+ "updated_dubai": "Fri 23 Oct, 20:55",
  "market": {
   "phase": "open",
   "open": true,
@@ -11,22 +11,20 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "already had a signal today",
-    "no live eToro price"
+    "already had a signal today"
    ],
-   "price": 212.23,
-   "bid": 212.23,
-   "ask": 212.23,
-   "spread": 0.0,
-   "spread_pct": 0.0,
+   "price": 212.94,
+   "bid": 212.93,
+   "ask": 212.94,
+   "spread": 0.01,
+   "spread_pct": 0.005,
    "trend": "DOWN",
-   "vwap": 212.44,
-   "rsi7": 48.0,
-   "atr": 0.442,
-   "day_change": 0.0,
-   "bar_utc": "2026-10-23T16:45:00+00:00",
+   "vwap": 212.43,
+   "rsi7": 35.0,
+   "atr": 0.457,
+   "day_change": -0.19,
+   "bar_utc": "2026-10-23T16:50:00+00:00",
    "spark": [
-    212.63,
     213.08,
     212.5,
     212.44,
@@ -103,7 +101,8 @@
     212.21,
     212.11,
     212.07,
-    212.23
+    212.23,
+    211.83
    ],
    "next_earnings": "2026-11-17",
    "gap_pct": -0.59,
@@ -121,16 +120,17 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.5\u00d7 normal"
+     "volume 0.8\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 52,
+    "score": 60,
     "parts": {
      "trend": 20,
      "structure": 8,
      "sweep": 0,
-     "momentum": 7,
+     "momentum": 15,
      "vwap": 15,
      "volume": 0,
      "volatility": 0,
@@ -138,32 +138,28 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.5\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 0.8\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 52
+   "score": 60
   },
   {
    "sym": "AMZN",
    "status": "NO TRADE",
-   "blocks": [
-    "no live eToro price"
-   ],
-   "price": 249.81,
-   "bid": 249.81,
-   "ask": 249.81,
-   "spread": 0.0,
-   "spread_pct": 0.0,
+   "blocks": [],
+   "price": 249.42,
+   "bid": 249.4,
+   "ask": 249.44,
+   "spread": 0.04,
+   "spread_pct": 0.016,
    "trend": "DOWN",
-   "vwap": 248.6,
-   "rsi7": 71.0,
-   "atr": 0.393,
-   "day_change": -0.22,
-   "bar_utc": "2026-10-23T16:45:00+00:00",
+   "vwap": 248.61,
+   "rsi7": 51.0,
+   "atr": 0.409,
+   "day_change": -0.35,
+   "bar_utc": "2026-10-23T16:50:00+00:00",
    "spark": [
-    251.5,
     251.81,
     251.37,
     251.19,
@@ -240,7 +236,8 @@
     249.62,
     249.63,
     249.56,
-    249.81
+    249.81,
+    249.48
    ],
    "next_earnings": "2026-10-29",
    "gap_pct": -0.69,
@@ -250,8 +247,8 @@
      "trend": 0,
      "structure": 15,
      "sweep": 0,
-     "momentum": 8,
-     "vwap": 0,
+     "momentum": 0,
+     "vwap": 8,
      "volume": 0,
      "volatility": 5,
      "session": 2
@@ -259,16 +256,16 @@
     "notes": [
      "1h trend DOWN",
      "broke the last swing high",
-     "too far from VWAP (chasing)",
-     "volume 0.4\u00d7 normal"
+     "volume 0.5\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 35,
+    "score": 50,
     "parts": {
      "trend": 20,
      "structure": 8,
-     "sweep": 0,
+     "sweep": 15,
      "momentum": 0,
      "vwap": 0,
      "volume": 0,
@@ -277,32 +274,29 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.4\u00d7 normal",
-     "last bar not in trade direction"
+     "swept 249.51 and reclaimed it",
+     "volume 0.5\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 35
+   "score": 50
   },
   {
    "sym": "TSLA",
    "status": "NO TRADE",
-   "blocks": [
-    "no live eToro price"
-   ],
-   "price": 372.81,
+   "blocks": [],
+   "price": 372.85,
    "bid": 372.81,
-   "ask": 372.81,
-   "spread": 0.0,
-   "spread_pct": 0.0,
+   "ask": 372.88,
+   "spread": 0.07,
+   "spread_pct": 0.019,
    "trend": "NEUTRAL",
-   "vwap": 372.0,
-   "rsi7": 55.0,
-   "atr": 1.265,
-   "day_change": -0.55,
-   "bar_utc": "2026-10-23T16:45:00+00:00",
+   "vwap": 372.01,
+   "rsi7": 52.0,
+   "atr": 1.238,
+   "day_change": -0.62,
+   "bar_utc": "2026-10-23T16:50:00+00:00",
    "spark": [
-    379.16,
     379.6,
     378.67,
     377.36,
@@ -379,7 +373,8 @@
     371.74,
     371.57,
     372.29,
-    372.81
+    372.81,
+    372.57
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": -0.52,
@@ -397,16 +392,17 @@
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.7\u00d7 normal"
+     "volume 0.6\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 2,
+    "score": 9,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
-     "momentum": 0,
+     "momentum": 7,
      "vwap": 0,
      "volume": 0,
      "volatility": 0,
@@ -414,8 +410,7 @@
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.7\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 0.6\u00d7 normal"
     ]
    },
    "direction": "LONG",
@@ -424,22 +419,19 @@
   {
    "sym": "MSFT",
    "status": "NO TRADE",
-   "blocks": [
-    "no live eToro price"
-   ],
-   "price": 525.32,
-   "bid": 525.32,
-   "ask": 525.32,
-   "spread": 0.0,
-   "spread_pct": 0.0,
+   "blocks": [],
+   "price": 525.06,
+   "bid": 525.02,
+   "ask": 525.1,
+   "spread": 0.08,
+   "spread_pct": 0.015,
    "trend": "DOWN",
-   "vwap": 522.1,
-   "rsi7": 66.0,
-   "atr": 0.762,
-   "day_change": 0.79,
-   "bar_utc": "2026-10-23T16:45:00+00:00",
+   "vwap": 522.13,
+   "rsi7": 45.0,
+   "atr": 0.779,
+   "day_change": 0.65,
+   "bar_utc": "2026-10-23T16:50:00+00:00",
    "spark": [
-    524.62,
     525.41,
     524.29,
     524.07,
@@ -516,34 +508,16 @@
     525.15,
     525.13,
     525.18,
-    525.32
+    525.32,
+    524.56
    ],
    "next_earnings": "2026-10-28",
    "gap_pct": -0.65,
    "long": {
-    "score": 24,
+    "score": 9,
     "parts": {
      "trend": 0,
      "structure": 7,
-     "sweep": 0,
-     "momentum": 15,
-     "vwap": 0,
-     "volume": 0,
-     "volatility": 0,
-     "session": 2
-    },
-    "notes": [
-     "1h trend DOWN",
-     "broke the last swing high",
-     "too far from VWAP (chasing)",
-     "volume 0.6\u00d7 normal"
-    ]
-   },
-   "short": {
-    "score": 22,
-    "parts": {
-     "trend": 20,
-     "structure": 0,
      "sweep": 0,
      "momentum": 0,
      "vwap": 0,
@@ -553,32 +527,48 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.6\u00d7 normal",
+     "broke the last swing high",
+     "too far from VWAP (chasing)",
+     "volume 0.5\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
-   "direction": "LONG",
-   "score": 24
+   "short": {
+    "score": 30,
+    "parts": {
+     "trend": 20,
+     "structure": 0,
+     "sweep": 0,
+     "momentum": 8,
+     "vwap": 0,
+     "volume": 0,
+     "volatility": 0,
+     "session": 2
+    },
+    "notes": [
+     "1h trend DOWN",
+     "volume 0.5\u00d7 normal"
+    ]
+   },
+   "direction": "SHORT",
+   "score": 30
   },
   {
    "sym": "META",
    "status": "NO TRADE",
-   "blocks": [
-    "no live eToro price"
-   ],
-   "price": 645.56,
-   "bid": 645.56,
-   "ask": 645.56,
-   "spread": 0.0,
-   "spread_pct": 0.0,
+   "blocks": [],
+   "price": 644.45,
+   "bid": 644.38,
+   "ask": 644.53,
+   "spread": 0.15,
+   "spread_pct": 0.023,
    "trend": "DOWN",
-   "vwap": 642.83,
-   "rsi7": 55.0,
-   "atr": 1.586,
-   "day_change": -0.48,
-   "bar_utc": "2026-10-23T16:45:00+00:00",
+   "vwap": 642.85,
+   "rsi7": 47.0,
+   "atr": 1.581,
+   "day_change": -0.62,
+   "bar_utc": "2026-10-23T16:50:00+00:00",
    "spark": [
-    644.5,
     646.11,
     646.98,
     647.23,
@@ -655,17 +645,18 @@
     644.82,
     644.44,
     645.79,
-    645.56
+    645.56,
+    644.64
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": -1.72,
    "long": {
-    "score": 25,
+    "score": 17,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
-     "momentum": 8,
+     "momentum": 0,
      "vwap": 15,
      "volume": 0,
      "volatility": 0,
@@ -673,17 +664,17 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.3\u00d7 normal",
+     "volume 0.4\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 22,
+    "score": 29,
     "parts": {
      "trend": 20,
      "structure": 0,
      "sweep": 0,
-     "momentum": 0,
+     "momentum": 7,
      "vwap": 0,
      "volume": 0,
      "volatility": 0,
@@ -691,39 +682,37 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.3\u00d7 normal"
+     "volume 0.4\u00d7 normal"
     ]
    },
-   "direction": "LONG",
-   "score": 25
+   "direction": "SHORT",
+   "score": 29
   }
  ],
- "errors": [
-  "live prices: HTTPSConnectionPool(host='public-api.etoro.com', port=443): Read timed out. (read timeout=15)"
- ],
+ "errors": [],
  "autotrade": {
   "mode": "demo",
   "open": [],
   "today_trades": 1,
-  "today_r": -1.0,
+  "today_r": 0.95,
   "total_trades": 3,
-  "total_r": -1.07
+  "total_r": 0.89
  },
  "stats": {
   "all_time": {
    "all": {
-    "trades": 4,
-    "wins": 3,
-    "win_rate": 75,
-    "net_r": 1.83,
-    "avg_r": 0.456
+    "trades": 5,
+    "wins": 4,
+    "win_rate": 80,
+    "net_r": 2.78,
+    "avg_r": 0.556
    },
    "NVDA": {
-    "trades": 1,
-    "wins": 1,
+    "trades": 2,
+    "wins": 2,
     "win_rate": 100,
-    "net_r": 0.96,
-    "avg_r": 0.958
+    "net_r": 1.91,
+    "avg_r": 0.956
    },
    "AMZN": {
     "trades": 2,
@@ -756,18 +745,18 @@
   },
   "last_14_days": {
    "all": {
-    "trades": 4,
-    "wins": 3,
-    "win_rate": 75,
-    "net_r": 1.83,
-    "avg_r": 0.456
+    "trades": 5,
+    "wins": 4,
+    "win_rate": 80,
+    "net_r": 2.78,
+    "avg_r": 0.556
    },
    "NVDA": {
-    "trades": 1,
-    "wins": 1,
+    "trades": 2,
+    "wins": 2,
     "win_rate": 100,
-    "net_r": 0.96,
-    "avg_r": 0.958
+    "net_r": 1.91,
+    "avg_r": 0.956
    },
    "AMZN": {
     "trades": 2,
@@ -808,9 +797,9 @@
    "entry": 212.36,
    "sl": 213.03,
    "tp": 211.69,
-   "status": "open",
-   "result": null,
-   "r": null
+   "status": "closed",
+   "result": "target",
+   "r": 0.955
   },
   {
    "sym": "TSLA",
@@ -868,23 +857,23 @@
  "spreads": {
   "NVDA": {
    "median": 0.02,
-   "samples": 189
+   "samples": 190
   },
   "AMZN": {
    "median": 0.04,
-   "samples": 189
+   "samples": 190
   },
   "TSLA": {
    "median": 0.08,
-   "samples": 189
+   "samples": 190
   },
   "MSFT": {
    "median": 0.08,
-   "samples": 189
+   "samples": 190
   },
   "META": {
    "median": 0.2,
-   "samples": 189
+   "samples": 190
   }
  },
  "config": {
