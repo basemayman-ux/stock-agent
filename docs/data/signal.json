@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-10-28T19:31:22+00:00",
- "updated_dubai": "Wed 28 Oct, 23:31",
+ "updated_utc": "2026-10-28T19:40:55+00:00",
+ "updated_dubai": "Wed 28 Oct, 23:40",
  "market": {
   "phase": "open",
   "open": true,
@@ -13,20 +13,18 @@
    "blocks": [
     "Federal Funds Rate today: no new trades from 30 min before until the close"
    ],
-   "price": 215.36,
-   "bid": 215.35,
-   "ask": 215.37,
+   "price": 215.56,
+   "bid": 215.55,
+   "ask": 215.57,
    "spread": 0.02,
    "spread_pct": 0.009,
    "trend": "DOWN",
-   "vwap": 217.29,
-   "rsi7": 29.0,
-   "atr": 0.587,
-   "day_change": -1.23,
-   "bar_utc": "2026-10-28T19:25:00+00:00",
+   "vwap": 217.18,
+   "rsi7": 23.0,
+   "atr": 0.589,
+   "day_change": -1.47,
+   "bar_utc": "2026-10-28T19:35:00+00:00",
    "spark": [
-    217.8,
-    218.04,
     218.2,
     218.21,
     217.79,
@@ -102,7 +100,9 @@
     215.62,
     215.59,
     214.75,
-    215.09
+    215.09,
+    214.7,
+    214.56
    ],
    "next_earnings": "2026-11-17",
    "gap_pct": 0.95,
@@ -120,7 +120,8 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 2.2\u00d7 normal"
+     "volume 1.9\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
@@ -139,8 +140,7 @@
      "1h trend DOWN",
      "broke the last swing low",
      "too far from VWAP (chasing)",
-     "volume 2.2\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 1.9\u00d7 normal"
     ]
    },
    "direction": "SHORT",
@@ -153,20 +153,18 @@
     "Federal Funds Rate today: no new trades from 30 min before until the close",
     "earnings next trading day"
    ],
-   "price": 253.65,
-   "bid": 253.64,
-   "ask": 253.67,
+   "price": 254.21,
+   "bid": 254.2,
+   "ask": 254.23,
    "spread": 0.03,
    "spread_pct": 0.012,
    "trend": "DOWN",
-   "vwap": 253.16,
-   "rsi7": 66.0,
-   "atr": 0.528,
-   "day_change": 0.38,
-   "bar_utc": "2026-10-28T19:25:00+00:00",
+   "vwap": 253.21,
+   "rsi7": 70.0,
+   "atr": 0.515,
+   "day_change": 0.51,
+   "bar_utc": "2026-10-28T19:35:00+00:00",
    "spark": [
-    254.41,
-    254.12,
     253.91,
     254.06,
     253.93,
@@ -214,7 +212,7 @@
     252.83,
     252.99,
     253.2,
-    252.94,
+    252.95,
     253.02,
     253.04,
     253.01,
@@ -242,17 +240,19 @@
     254.02,
     254.15,
     253.82,
-    254.11
+    254.11,
+    254.53,
+    254.43
    ],
    "next_earnings": "2026-10-29",
    "gap_pct": -0.1,
    "long": {
-    "score": 46,
+    "score": 61,
     "parts": {
      "trend": 0,
-     "structure": 8,
+     "structure": 15,
      "sweep": 0,
-     "momentum": 7,
+     "momentum": 15,
      "vwap": 15,
      "volume": 6,
      "volatility": 5,
@@ -260,15 +260,17 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 1.2\u00d7 normal"
+     "broke the last swing high",
+     "volume 1.5\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 36,
+    "score": 51,
     "parts": {
      "trend": 20,
      "structure": 0,
-     "sweep": 0,
+     "sweep": 15,
      "momentum": 0,
      "vwap": 0,
      "volume": 6,
@@ -277,12 +279,12 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 1.2\u00d7 normal",
-     "last bar not in trade direction"
+     "swept 254.65 and reclaimed it",
+     "volume 1.5\u00d7 normal"
     ]
    },
    "direction": "LONG",
-   "score": 46
+   "score": 61
   },
   {
    "sym": "TSLA",
@@ -291,20 +293,18 @@
     "Federal Funds Rate today: no new trades from 30 min before until the close",
     "already had a signal today"
    ],
-   "price": 403.0,
-   "bid": 402.97,
-   "ask": 403.03,
-   "spread": 0.06,
-   "spread_pct": 0.015,
+   "price": 402.3,
+   "bid": 402.28,
+   "ask": 402.32,
+   "spread": 0.04,
+   "spread_pct": 0.01,
    "trend": "UP",
-   "vwap": 401.78,
-   "rsi7": 48.0,
-   "atr": 0.972,
-   "day_change": -1.02,
-   "bar_utc": "2026-10-28T19:25:00+00:00",
+   "vwap": 401.8,
+   "rsi7": 38.0,
+   "atr": 0.955,
+   "day_change": -1.15,
+   "bar_utc": "2026-10-28T19:35:00+00:00",
    "spark": [
-    407.99,
-    407.91,
     407.92,
     407.53,
     406.75,
@@ -380,17 +380,19 @@
     402.64,
     402.71,
     402.63,
-    402.87
+    402.87,
+    403.3,
+    402.34
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": 0.75,
    "long": {
-    "score": 53,
+    "score": 46,
     "parts": {
      "trend": 20,
      "structure": 8,
      "sweep": 0,
-     "momentum": 7,
+     "momentum": 0,
      "vwap": 8,
      "volume": 0,
      "volatility": 5,
@@ -398,16 +400,17 @@
     },
     "notes": [
      "1h trend UP",
-     "volume 0.6\u00d7 normal"
+     "volume 0.8\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 10,
+    "score": 18,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
-     "momentum": 0,
+     "momentum": 8,
      "vwap": 0,
      "volume": 0,
      "volatility": 5,
@@ -415,12 +418,11 @@
     },
     "notes": [
      "1h trend UP",
-     "volume 0.6\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 0.8\u00d7 normal"
     ]
    },
    "direction": "LONG",
-   "score": 53
+   "score": 46
   },
   {
    "sym": "MSFT",
@@ -429,20 +431,18 @@
     "Federal Funds Rate today: no new trades from 30 min before until the close",
     "earnings today"
    ],
-   "price": 529.18,
-   "bid": 529.17,
-   "ask": 529.19,
-   "spread": 0.02,
-   "spread_pct": 0.004,
+   "price": 529.28,
+   "bid": 529.25,
+   "ask": 529.31,
+   "spread": 0.06,
+   "spread_pct": 0.011,
    "trend": "DOWN",
-   "vwap": 528.78,
+   "vwap": 528.79,
    "rsi7": 56.0,
-   "atr": 1.007,
+   "atr": 0.982,
    "day_change": -0.4,
-   "bar_utc": "2026-10-28T19:25:00+00:00",
+   "bar_utc": "2026-10-28T19:35:00+00:00",
    "spark": [
-    532.48,
-    532.38,
     532.35,
     532.02,
     531.84,
@@ -518,17 +518,19 @@
     528.65,
     528.27,
     529.25,
-    529.03
+    529.03,
+    529.05,
+    529.06
    ],
    "next_earnings": "2026-10-28",
    "gap_pct": -0.03,
    "long": {
-    "score": 73,
+    "score": 57,
     "parts": {
      "trend": 0,
-     "structure": 8,
+     "structure": 0,
      "sweep": 15,
-     "momentum": 15,
+     "momentum": 7,
      "vwap": 15,
      "volume": 10,
      "volatility": 5,
@@ -537,8 +539,7 @@
     "notes": [
      "1h trend DOWN",
      "swept 528.32 and reclaimed it",
-     "volume 1.7\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 2.3\u00d7 normal"
     ]
    },
    "short": {
@@ -555,11 +556,12 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 1.7\u00d7 normal"
+     "volume 2.3\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "direction": "LONG",
-   "score": 73
+   "score": 57
   },
   {
    "sym": "META",
@@ -567,20 +569,18 @@
    "blocks": [
     "Federal Funds Rate today: no new trades from 30 min before until the close"
    ],
-   "price": 610.63,
-   "bid": 610.59,
-   "ask": 610.68,
-   "spread": 0.09,
-   "spread_pct": 0.015,
+   "price": 610.91,
+   "bid": 610.84,
+   "ask": 610.99,
+   "spread": 0.15,
+   "spread_pct": 0.025,
    "trend": "DOWN",
-   "vwap": 614.34,
-   "rsi7": 37.0,
-   "atr": 1.349,
+   "vwap": 614.26,
+   "rsi7": 39.0,
+   "atr": 1.291,
    "day_change": -1.52,
-   "bar_utc": "2026-10-28T19:25:00+00:00",
+   "bar_utc": "2026-10-28T19:35:00+00:00",
    "spark": [
-    622.72,
-    621.76,
     621.0,
     620.62,
     620.37,
@@ -656,7 +656,9 @@
     610.81,
     611.77,
     610.71,
-    610.63
+    610.63,
+    611.05,
+    610.64
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": 0.2,
@@ -674,15 +676,15 @@
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.7\u00d7 normal",
+     "volume 1.0\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 37,
+    "score": 45,
     "parts": {
      "trend": 20,
-     "structure": 0,
+     "structure": 8,
      "sweep": 0,
      "momentum": 7,
      "vwap": 0,
@@ -693,11 +695,11 @@
     "notes": [
      "1h trend DOWN",
      "too far from VWAP (chasing)",
-     "volume 0.7\u00d7 normal"
+     "volume 1.0\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 37
+   "score": 45
   }
  ],
  "errors": [],
@@ -949,23 +951,23 @@
  "spreads": {
   "NVDA": {
    "median": 0.02,
-   "samples": 329
+   "samples": 330
   },
   "AMZN": {
    "median": 0.03,
-   "samples": 329
+   "samples": 330
   },
   "TSLA": {
    "median": 0.07,
-   "samples": 329
+   "samples": 330
   },
   "MSFT": {
    "median": 0.07,
-   "samples": 329
+   "samples": 330
   },
   "META": {
    "median": 0.17,
-   "samples": 329
+   "samples": 330
   }
  },
  "config": {
