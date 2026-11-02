@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-02T13:21:06+00:00",
- "updated_dubai": "Mon 02 Nov, 17:21",
+ "updated_utc": "2026-11-02T13:31:19+00:00",
+ "updated_dubai": "Mon 02 Nov, 17:31",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -13,11 +13,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 206.47,
-   "bid": 206.41,
-   "ask": 206.53,
-   "spread": 0.12,
-   "spread_pct": 0.058,
+   "price": 206.11,
+   "bid": 206.02,
+   "ask": 206.2,
+   "spread": 0.18,
+   "spread_pct": 0.087,
    "trend": "DOWN",
    "vwap": 204.58,
    "rsi7": 75.0,
@@ -152,11 +152,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 241.1,
-   "bid": 241.01,
-   "ask": 241.19,
-   "spread": 0.18,
-   "spread_pct": 0.075,
+   "price": 241.29,
+   "bid": 241.19,
+   "ask": 241.39,
+   "spread": 0.2,
+   "spread_pct": 0.083,
    "trend": "DOWN",
    "vwap": 238.16,
    "rsi7": 63.0,
@@ -291,11 +291,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 402.26,
-   "bid": 402.22,
-   "ask": 402.3,
-   "spread": 0.08,
-   "spread_pct": 0.02,
+   "price": 402.54,
+   "bid": 402.44,
+   "ask": 402.65,
+   "spread": 0.21,
+   "spread_pct": 0.052,
    "trend": "UP",
    "vwap": 397.44,
    "rsi7": 76.0,
@@ -422,7 +422,7 @@
    },
    "direction": "LONG",
    "score": 78,
-   "plan_issue": "stop too wide (4.3 ATR)"
+   "plan_issue": "stop too wide (4.6 ATR)"
   },
   {
    "sym": "MSFT",
@@ -431,9 +431,9 @@
     "market pre-market",
     "spread too wide (0.19%)"
    ],
-   "price": 524.5,
-   "bid": 524.0,
-   "ask": 525.0,
+   "price": 525.3,
+   "bid": 524.8,
+   "ask": 525.8,
    "spread": 1.0,
    "spread_pct": 0.19,
    "trend": "DOWN",
@@ -569,13 +569,14 @@
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "market pre-market",
+    "spread too wide (0.16%)"
    ],
-   "price": 613.43,
-   "bid": 613.27,
-   "ask": 613.6,
-   "spread": 0.33,
-   "spread_pct": 0.054,
+   "price": 613.5,
+   "bid": 613.0,
+   "ask": 614.0,
+   "spread": 1.0,
+   "spread_pct": 0.163,
    "trend": "DOWN",
    "vwap": 617.93,
    "rsi7": 55.0,
@@ -701,7 +702,8 @@
     ]
    },
    "direction": "SHORT",
-   "score": 56
+   "score": 56,
+   "plan_issue": "stop too wide (5.4 ATR)"
   }
  ],
  "errors": [],
