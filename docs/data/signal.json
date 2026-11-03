@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-03T14:11:04+00:00",
- "updated_dubai": "Tue 03 Nov, 18:11",
+ "updated_utc": "2026-11-03T14:21:01+00:00",
+ "updated_dubai": "Tue 03 Nov, 18:21",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -13,11 +13,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 206.81,
-   "bid": 206.78,
-   "ask": 206.84,
-   "spread": 0.06,
-   "spread_pct": 0.029,
+   "price": 206.96,
+   "bid": 206.94,
+   "ask": 206.98,
+   "spread": 0.04,
+   "spread_pct": 0.019,
    "trend": "DOWN",
    "vwap": 206.01,
    "rsi7": 32.0,
@@ -151,11 +151,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 248.05,
-   "bid": 247.95,
-   "ask": 248.15,
-   "spread": 0.2,
-   "spread_pct": 0.081,
+   "price": 248.25,
+   "bid": 248.14,
+   "ask": 248.37,
+   "spread": 0.23,
+   "spread_pct": 0.093,
    "trend": "DOWN",
    "vwap": 249.66,
    "rsi7": 24.0,
@@ -290,11 +290,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 406.82,
-   "bid": 406.68,
-   "ask": 406.96,
-   "spread": 0.28,
-   "spread_pct": 0.069,
+   "price": 406.37,
+   "bid": 406.26,
+   "ask": 406.48,
+   "spread": 0.22,
+   "spread_pct": 0.054,
    "trend": "UP",
    "vwap": 407.1,
    "rsi7": 57.0,
@@ -422,7 +422,7 @@
    },
    "direction": "LONG",
    "score": 63,
-   "plan_issue": "stop too wide (4.7 ATR)"
+   "plan_issue": "stop too wide (4.4 ATR)"
   },
   {
    "sym": "MSFT",
@@ -430,11 +430,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 507.33,
-   "bid": 507.27,
-   "ask": 507.4,
-   "spread": 0.13,
-   "spread_pct": 0.026,
+   "price": 506.5,
+   "bid": 506.23,
+   "ask": 506.76,
+   "spread": 0.53,
+   "spread_pct": 0.105,
    "trend": "DOWN",
    "vwap": 518.48,
    "rsi7": 18.0,
@@ -561,19 +561,21 @@
     ]
    },
    "direction": "SHORT",
-   "score": 62
+   "score": 62,
+   "plan_issue": "stop too wide (3.6 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "market pre-market",
+    "spread too wide (0.22%)"
    ],
-   "price": 609.36,
-   "bid": 609.1,
-   "ask": 609.61,
-   "spread": 0.51,
-   "spread_pct": 0.084,
+   "price": 611.27,
+   "bid": 610.59,
+   "ask": 611.94,
+   "spread": 1.35,
+   "spread_pct": 0.221,
    "trend": "DOWN",
    "vwap": 612.71,
    "rsi7": 21.0,
@@ -701,7 +703,7 @@
    },
    "direction": "SHORT",
    "score": 57,
-   "plan_issue": "stop too wide (3.2 ATR)"
+   "plan_issue": "stop too wide (8.4 ATR)"
   }
  ],
  "errors": [],
