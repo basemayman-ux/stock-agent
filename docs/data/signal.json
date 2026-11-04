@@ -1,9 +1,9 @@
 {
- "updated_utc": "2026-11-04T14:20:54+00:00",
- "updated_dubai": "Wed 04 Nov, 18:20",
+ "updated_utc": "2026-11-04T14:31:27+00:00",
+ "updated_dubai": "Wed 04 Nov, 18:31",
  "market": {
-  "phase": "pre-market",
-  "open": false,
+  "phase": "open",
+  "open": true,
   "session_dubai": "18:30\u201301:00"
  },
  "stocks": [
@@ -11,13 +11,14 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 204.12,
-   "bid": 204.08,
-   "ask": 204.15,
-   "spread": 0.07,
-   "spread_pct": 0.034,
+   "price": 203.66,
+   "bid": 203.58,
+   "ask": 203.73,
+   "spread": 0.15,
+   "spread_pct": 0.074,
    "trend": "DOWN",
    "vwap": 207.78,
    "rsi7": 43.0,
@@ -144,19 +145,20 @@
    },
    "direction": "SHORT",
    "score": 63,
-   "plan_issue": "stop too wide (8.3 ATR)"
+   "plan_issue": "stop too wide (9.5 ATR)"
   },
   {
    "sym": "AMZN",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 261.9,
-   "bid": 261.8,
-   "ask": 262.0,
-   "spread": 0.2,
-   "spread_pct": 0.076,
+   "price": 267.96,
+   "bid": 267.92,
+   "ask": 268.0,
+   "spread": 0.08,
+   "spread_pct": 0.03,
    "trend": "NEUTRAL",
    "vwap": 249.31,
    "rsi7": 32.0,
@@ -289,13 +291,14 @@
    "sym": "TSLA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 380.07,
-   "bid": 379.95,
-   "ask": 380.2,
-   "spread": 0.25,
-   "spread_pct": 0.066,
+   "price": 379.31,
+   "bid": 379.1,
+   "ask": 379.51,
+   "spread": 0.41,
+   "spread_pct": 0.108,
    "trend": "UP",
    "vwap": 399.78,
    "rsi7": 62.0,
@@ -421,19 +424,21 @@
     ]
    },
    "direction": "LONG",
-   "score": 58
+   "score": 58,
+   "plan_issue": "stop too wide (4.5 ATR)"
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "first 15 min of the session",
+    "price data 1051 min old"
    ],
-   "price": 539.85,
-   "bid": 539.71,
-   "ask": 539.98,
-   "spread": 0.27,
-   "spread_pct": 0.05,
+   "price": 545.82,
+   "bid": 545.63,
+   "ask": 546.0,
+   "spread": 0.37,
+   "spread_pct": 0.068,
    "trend": "DOWN",
    "vwap": 517.48,
    "rsi7": 39.0,
@@ -560,20 +565,22 @@
     ]
    },
    "direction": "SHORT",
-   "score": 55
+   "score": 55,
+   "plan_issue": "stop too wide (3.6 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "spread too wide (0.13%)"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "spread too wide (0.14%)"
    ],
-   "price": 631.42,
-   "bid": 631.0,
-   "ask": 631.85,
-   "spread": 0.85,
-   "spread_pct": 0.135,
+   "price": 642.21,
+   "bid": 641.75,
+   "ask": 642.67,
+   "spread": 0.92,
+   "spread_pct": 0.143,
    "trend": "DOWN",
    "vwap": 619.21,
    "rsi7": 63.0,
@@ -700,7 +707,7 @@
    },
    "direction": "LONG",
    "score": 58,
-   "plan_issue": "stop too wide (14.1 ATR)"
+   "plan_issue": "stop too wide (25.5 ATR)"
   }
  ],
  "errors": [],
