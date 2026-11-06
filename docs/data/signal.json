@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-06T13:11:00+00:00",
- "updated_dubai": "Fri 06 Nov, 17:11",
+ "updated_utc": "2026-11-06T13:20:58+00:00",
+ "updated_dubai": "Fri 06 Nov, 17:20",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -9,10 +9,144 @@
  "stocks": [
   {
    "sym": "NVDA",
-   "status": "ERROR",
+   "status": "NO TRADE",
    "blocks": [
-    "HTTPSConnectionPool(host='public-api.etoro.com', port=443): Read timed out. (read timeout=15)"
-   ]
+    "market pre-market",
+    "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
+   ],
+   "price": 189.55,
+   "bid": 189.51,
+   "ask": 189.58,
+   "spread": 0.07,
+   "spread_pct": 0.037,
+   "trend": "DOWN",
+   "vwap": 185.76,
+   "rsi7": 37.0,
+   "atr": 0.951,
+   "day_change": 0.0,
+   "bar_utc": "2026-11-05T20:55:00+00:00",
+   "spark": [
+    193.65,
+    192.38,
+    192.07,
+    190.9,
+    190.27,
+    190.11,
+    189.18,
+    188.33,
+    186.82,
+    186.23,
+    184.89,
+    186.35,
+    187.48,
+    186.24,
+    185.39,
+    184.57,
+    183.22,
+    183.56,
+    182.38,
+    184.12,
+    185.8,
+    185.79,
+    186.3,
+    186.59,
+    186.26,
+    187.25,
+    186.43,
+    186.31,
+    186.12,
+    186.23,
+    185.06,
+    185.23,
+    185.43,
+    185.54,
+    185.17,
+    184.33,
+    184.64,
+    183.65,
+    183.21,
+    182.91,
+    182.82,
+    182.73,
+    182.18,
+    182.32,
+    182.96,
+    182.58,
+    182.16,
+    182.8,
+    182.71,
+    183.04,
+    182.78,
+    182.79,
+    182.77,
+    183.34,
+    182.63,
+    182.85,
+    183.82,
+    183.56,
+    182.81,
+    182.63,
+    182.97,
+    183.37,
+    184.43,
+    184.55,
+    184.46,
+    184.42,
+    183.95,
+    182.78,
+    182.86,
+    182.98,
+    183.25,
+    183.12,
+    182.93,
+    182.17,
+    181.77,
+    182.33,
+    183.26,
+    181.8
+   ],
+   "next_earnings": "2026-11-17",
+   "gap_pct": null,
+   "long": {
+    "score": 38,
+    "parts": {
+     "trend": 0,
+     "structure": 8,
+     "sweep": 15,
+     "momentum": 0,
+     "vwap": 0,
+     "volume": 10,
+     "volatility": 0,
+     "session": 5
+    },
+    "notes": [
+     "1h trend DOWN",
+     "swept 181.63 and reclaimed it",
+     "volume 4.5\u00d7 normal",
+     "last bar not in trade direction"
+    ]
+   },
+   "short": {
+    "score": 57,
+    "parts": {
+     "trend": 20,
+     "structure": 15,
+     "sweep": 0,
+     "momentum": 7,
+     "vwap": 0,
+     "volume": 10,
+     "volatility": 0,
+     "session": 5
+    },
+    "notes": [
+     "1h trend DOWN",
+     "broke the last swing low",
+     "too far from VWAP (chasing)",
+     "volume 4.5\u00d7 normal"
+    ]
+   },
+   "direction": "SHORT",
+   "score": 57
   },
   {
    "sym": "AMZN",
@@ -20,13 +154,13 @@
    "blocks": [
     "market pre-market",
     "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.17%)"
+    "spread too wide (0.13%)"
    ],
    "price": 260.58,
-   "bid": 260.36,
-   "ask": 260.8,
-   "spread": 0.44,
-   "spread_pct": 0.169,
+   "bid": 260.41,
+   "ask": 260.75,
+   "spread": 0.34,
+   "spread_pct": 0.13,
    "trend": "UP",
    "vwap": 260.75,
    "rsi7": 65.0,
@@ -152,8 +286,7 @@
     ]
    },
    "direction": "LONG",
-   "score": 50,
-   "plan_issue": "stop too wide (3.8 ATR)"
+   "score": 50
   },
   {
    "sym": "TSLA",
@@ -162,11 +295,11 @@
     "market pre-market",
     "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 348.45,
-   "bid": 348.3,
-   "ask": 348.6,
-   "spread": 0.3,
-   "spread_pct": 0.086,
+   "price": 349.84,
+   "bid": 349.7,
+   "ask": 349.98,
+   "spread": 0.28,
+   "spread_pct": 0.08,
    "trend": "DOWN",
    "vwap": 345.95,
    "rsi7": 51.0,
@@ -301,11 +434,11 @@
     "market pre-market",
     "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 530.71,
-   "bid": 530.43,
-   "ask": 531.0,
-   "spread": 0.57,
-   "spread_pct": 0.107,
+   "price": 530.89,
+   "bid": 530.8,
+   "ask": 530.98,
+   "spread": 0.18,
+   "spread_pct": 0.034,
    "trend": "UP",
    "vwap": 541.05,
    "rsi7": 51.0,
@@ -440,14 +573,13 @@
    "status": "NO TRADE",
    "blocks": [
     "market pre-market",
-    "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.20%)"
+    "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 604.6,
-   "bid": 604.0,
-   "ask": 605.19,
-   "spread": 1.19,
-   "spread_pct": 0.197,
+   "price": 605.67,
+   "bid": 605.5,
+   "ask": 605.85,
+   "spread": 0.35,
+   "spread_pct": 0.058,
    "trend": "DOWN",
    "vwap": 604.3,
    "rsi7": 50.0,
@@ -573,13 +705,10 @@
     ]
    },
    "direction": "SHORT",
-   "score": 50,
-   "plan_issue": "stop too wide (4.2 ATR)"
+   "score": 50
   }
  ],
- "errors": [
-  "NVDA: HTTPSConnectionPool(host='public-api.etoro.com', port=443): Read timed out. (read timeout=15)"
- ],
+ "errors": [],
  "autotrade": {
   "mode": "demo",
   "open": [],
