@@ -1,9 +1,9 @@
 {
- "updated_utc": "2026-11-06T14:21:00+00:00",
- "updated_dubai": "Fri 06 Nov, 18:21",
+ "updated_utc": "2026-11-06T14:31:20+00:00",
+ "updated_dubai": "Fri 06 Nov, 18:31",
  "market": {
-  "phase": "pre-market",
-  "open": false,
+  "phase": "open",
+  "open": true,
   "session_dubai": "18:30\u201301:00"
  },
  "stocks": [
@@ -11,14 +11,15 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 189.94,
-   "bid": 189.91,
-   "ask": 189.96,
-   "spread": 0.05,
-   "spread_pct": 0.026,
+   "price": 191.85,
+   "bid": 191.83,
+   "ask": 191.86,
+   "spread": 0.03,
+   "spread_pct": 0.016,
    "trend": "DOWN",
    "vwap": 185.76,
    "rsi7": 37.0,
@@ -152,14 +153,15 @@
    "sym": "AMZN",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 261.07,
-   "bid": 261.03,
-   "ask": 261.12,
-   "spread": 0.09,
-   "spread_pct": 0.034,
+   "price": 260.98,
+   "bid": 260.87,
+   "ask": 261.09,
+   "spread": 0.22,
+   "spread_pct": 0.084,
    "trend": "UP",
    "vwap": 260.75,
    "rsi7": 65.0,
@@ -289,156 +291,24 @@
   },
   {
    "sym": "TSLA",
-   "status": "NO TRADE",
+   "status": "ERROR",
    "blocks": [
-    "market pre-market",
-    "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
-   ],
-   "price": 350.84,
-   "bid": 350.67,
-   "ask": 351.0,
-   "spread": 0.33,
-   "spread_pct": 0.094,
-   "trend": "DOWN",
-   "vwap": 345.95,
-   "rsi7": 51.0,
-   "atr": 1.873,
-   "day_change": 0.0,
-   "bar_utc": "2026-11-05T20:55:00+00:00",
-   "spark": [
-    365.23,
-    360.76,
-    354.26,
-    350.84,
-    346.8,
-    347.23,
-    348.6,
-    350.16,
-    350.13,
-    349.2,
-    347.96,
-    347.77,
-    349.1,
-    348.95,
-    348.74,
-    345.47,
-    341.39,
-    343.84,
-    343.3,
-    345.31,
-    346.88,
-    349.34,
-    350.32,
-    349.8,
-    349.1,
-    349.8,
-    347.36,
-    345.52,
-    345.55,
-    344.53,
-    343.34,
-    343.6,
-    343.88,
-    342.91,
-    341.66,
-    341.16,
-    342.47,
-    341.21,
-    341.94,
-    342.34,
-    341.76,
-    340.52,
-    339.24,
-    339.63,
-    340.87,
-    341.28,
-    339.96,
-    340.74,
-    340.06,
-    340.09,
-    340.47,
-    340.69,
-    340.84,
-    340.86,
-    339.98,
-    341.21,
-    343.15,
-    343.59,
-    341.39,
-    341.23,
-    341.2,
-    343.23,
-    343.84,
-    344.48,
-    344.5,
-    344.51,
-    342.57,
-    341.45,
-    341.33,
-    342.67,
-    342.7,
-    342.75,
-    343.36,
-    343.18,
-    342.44,
-    343.35,
-    344.77,
-    343.23
-   ],
-   "next_earnings": "2027-01-27",
-   "gap_pct": null,
-   "long": {
-    "score": 38,
-    "parts": {
-     "trend": 0,
-     "structure": 15,
-     "sweep": 0,
-     "momentum": 8,
-     "vwap": 0,
-     "volume": 10,
-     "volatility": 0,
-     "session": 5
-    },
-    "notes": [
-     "1h trend DOWN",
-     "broke the last swing high",
-     "volume 4.9\u00d7 normal",
-     "last bar not in trade direction"
-    ]
-   },
-   "short": {
-    "score": 58,
-    "parts": {
-     "trend": 20,
-     "structure": 8,
-     "sweep": 0,
-     "momentum": 0,
-     "vwap": 15,
-     "volume": 10,
-     "volatility": 0,
-     "session": 5
-    },
-    "notes": [
-     "1h trend DOWN",
-     "volume 4.9\u00d7 normal"
-    ]
-   },
-   "direction": "SHORT",
-   "score": 58
+    "HTTPSConnectionPool(host='public-api.etoro.com', port=443): Read timed out. (read timeout=15)"
+   ]
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.14%)"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 529.62,
-   "bid": 529.24,
-   "ask": 530.0,
-   "spread": 0.76,
-   "spread_pct": 0.143,
+   "price": 529.3,
+   "bid": 529.08,
+   "ask": 529.52,
+   "spread": 0.44,
+   "spread_pct": 0.083,
    "trend": "UP",
    "vwap": 541.05,
    "rsi7": 51.0,
@@ -566,21 +436,21 @@
     ]
    },
    "direction": "LONG",
-   "score": 70,
-   "plan_issue": "stop too wide (3.6 ATR)"
+   "score": 70
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 601.56,
-   "bid": 601.44,
-   "ask": 601.67,
-   "spread": 0.23,
-   "spread_pct": 0.038,
+   "price": 611.57,
+   "bid": 611.34,
+   "ask": 611.79,
+   "spread": 0.45,
+   "spread_pct": 0.074,
    "trend": "DOWN",
    "vwap": 604.3,
    "rsi7": 50.0,
@@ -709,7 +579,9 @@
    "score": 50
   }
  ],
- "errors": [],
+ "errors": [
+  "TSLA: HTTPSConnectionPool(host='public-api.etoro.com', port=443): Read timed out. (read timeout=15)"
+ ],
  "autotrade": {
   "mode": "demo",
   "open": [],
@@ -992,20 +864,7 @@
  ],
  "news": {
   "macro_now": "Average Hourly Earnings m/m released pre-market; waiting until 10:00 ET",
-  "upcoming": [
-   {
-    "title": "Average Hourly Earnings m/m",
-    "dubai": "Fri 17:30"
-   },
-   {
-    "title": "Non-Farm Employment Change",
-    "dubai": "Fri 17:30"
-   },
-   {
-    "title": "Unemployment Rate",
-    "dubai": "Fri 17:30"
-   }
-  ]
+  "upcoming": []
  },
  "spreads": {
   "NVDA": {
