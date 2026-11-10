@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-10T13:51:02+00:00",
- "updated_dubai": "Tue 10 Nov, 17:51",
+ "updated_utc": "2026-11-10T14:01:36+00:00",
+ "updated_dubai": "Tue 10 Nov, 18:01",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -14,9 +14,9 @@
     "market pre-market",
     "Core CPI m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 175.25,
-   "bid": 175.22,
-   "ask": 175.29,
+   "price": 175.99,
+   "bid": 175.95,
+   "ask": 176.02,
    "spread": 0.07,
    "spread_pct": 0.04,
    "trend": "DOWN",
@@ -152,13 +152,14 @@
    "status": "NO TRADE",
    "blocks": [
     "market pre-market",
-    "Core CPI m/m released pre-market; waiting until 10:00 ET"
+    "Core CPI m/m released pre-market; waiting until 10:00 ET",
+    "spread too wide (0.13%)"
    ],
-   "price": 266.19,
-   "bid": 266.12,
-   "ask": 266.25,
-   "spread": 0.13,
-   "spread_pct": 0.049,
+   "price": 265.63,
+   "bid": 265.46,
+   "ask": 265.8,
+   "spread": 0.34,
+   "spread_pct": 0.128,
    "trend": "UP",
    "vwap": 270.05,
    "rsi7": 20.0,
@@ -285,20 +286,22 @@
     ]
    },
    "direction": "LONG",
-   "score": 48
+   "score": 48,
+   "plan_issue": "stop too wide (5.5 ATR)"
   },
   {
    "sym": "TSLA",
    "status": "NO TRADE",
    "blocks": [
     "market pre-market",
-    "Core CPI m/m released pre-market; waiting until 10:00 ET"
+    "Core CPI m/m released pre-market; waiting until 10:00 ET",
+    "spread too wide (0.16%)"
    ],
-   "price": 371.55,
-   "bid": 371.5,
-   "ask": 371.6,
-   "spread": 0.1,
-   "spread_pct": 0.027,
+   "price": 371.1,
+   "bid": 370.79,
+   "ask": 371.4,
+   "spread": 0.61,
+   "spread_pct": 0.164,
    "trend": "DOWN",
    "vwap": 376.94,
    "rsi7": 21.0,
@@ -426,7 +429,7 @@
    },
    "direction": "SHORT",
    "score": 70,
-   "plan_issue": "stop too wide (11.2 ATR)"
+   "plan_issue": "stop too wide (12.0 ATR)"
   },
   {
    "sym": "MSFT",
@@ -436,9 +439,9 @@
     "Core CPI m/m released pre-market; waiting until 10:00 ET",
     "spread too wide (0.17%)"
    ],
-   "price": 542.95,
-   "bid": 542.5,
-   "ask": 543.41,
+   "price": 542.97,
+   "bid": 542.52,
+   "ask": 543.43,
    "spread": 0.91,
    "spread_pct": 0.167,
    "trend": "UP",
@@ -574,13 +577,14 @@
    "status": "NO TRADE",
    "blocks": [
     "market pre-market",
-    "Core CPI m/m released pre-market; waiting until 10:00 ET"
+    "Core CPI m/m released pre-market; waiting until 10:00 ET",
+    "spread too wide (0.20%)"
    ],
-   "price": 640.96,
-   "bid": 640.75,
-   "ask": 641.17,
-   "spread": 0.42,
-   "spread_pct": 0.066,
+   "price": 637.64,
+   "bid": 637.0,
+   "ask": 638.29,
+   "spread": 1.29,
+   "spread_pct": 0.202,
    "trend": "NEUTRAL",
    "vwap": 641.42,
    "rsi7": 23.0,
@@ -706,7 +710,8 @@
     ]
    },
    "direction": "LONG",
-   "score": 43
+   "score": 43,
+   "plan_issue": "stop too wide (7.9 ATR)"
   }
  ],
  "errors": [],
