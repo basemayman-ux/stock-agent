@@ -1,9 +1,9 @@
 {
- "updated_utc": "2026-11-13T14:21:10+00:00",
- "updated_dubai": "Fri 13 Nov, 18:21",
+ "updated_utc": "2026-11-13T14:31:22+00:00",
+ "updated_dubai": "Fri 13 Nov, 18:31",
  "market": {
-  "phase": "pre-market",
-  "open": false,
+  "phase": "open",
+  "open": true,
   "session_dubai": "18:30\u201301:00"
  },
  "stocks": [
@@ -11,14 +11,15 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PPI m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 169.82,
-   "bid": 169.8,
-   "ask": 169.84,
-   "spread": 0.04,
-   "spread_pct": 0.024,
+   "price": 167.23,
+   "bid": 167.22,
+   "ask": 167.24,
+   "spread": 0.02,
+   "spread_pct": 0.012,
    "trend": "DOWN",
    "vwap": 162.17,
    "rsi7": 73.0,
@@ -151,14 +152,15 @@
    "sym": "AMZN",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PPI m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 269.91,
-   "bid": 269.82,
-   "ask": 270.0,
-   "spread": 0.18,
-   "spread_pct": 0.067,
+   "price": 268.04,
+   "bid": 267.96,
+   "ask": 268.13,
+   "spread": 0.17,
+   "spread_pct": 0.063,
    "trend": "UP",
    "vwap": 269.73,
    "rsi7": 34.0,
@@ -286,20 +288,21 @@
    },
    "direction": "LONG",
    "score": 48,
-   "plan_issue": "stop too wide (6.7 ATR)"
+   "plan_issue": "stop too wide (3.2 ATR)"
   },
   {
    "sym": "TSLA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PPI m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 403.39,
-   "bid": 403.37,
-   "ask": 403.41,
-   "spread": 0.04,
-   "spread_pct": 0.01,
+   "price": 401.07,
+   "bid": 400.86,
+   "ask": 401.28,
+   "spread": 0.42,
+   "spread_pct": 0.105,
    "trend": "UP",
    "vwap": 393.97,
    "rsi7": 58.0,
@@ -424,21 +427,21 @@
     ]
    },
    "direction": "LONG",
-   "score": 62,
-   "plan_issue": "stop too wide (4.0 ATR)"
+   "score": 62
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PPI m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 517.71,
-   "bid": 517.7,
-   "ask": 517.72,
-   "spread": 0.02,
-   "spread_pct": 0.004,
+   "price": 516.11,
+   "bid": 516.01,
+   "ask": 516.2,
+   "spread": 0.19,
+   "spread_pct": 0.037,
    "trend": "DOWN",
    "vwap": 525.33,
    "rsi7": 61.0,
@@ -566,20 +569,21 @@
    },
    "direction": "SHORT",
    "score": 48,
-   "plan_issue": "stop too wide (6.0 ATR)"
+   "plan_issue": "stop too wide (7.8 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PPI m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 625.65,
-   "bid": 625.3,
-   "ask": 626.0,
-   "spread": 0.7,
-   "spread_pct": 0.112,
+   "price": 626.53,
+   "bid": 626.35,
+   "ask": 626.7,
+   "spread": 0.35,
+   "spread_pct": 0.056,
    "trend": "DOWN",
    "vwap": 623.65,
    "rsi7": 72.0,
@@ -706,8 +710,7 @@
     ]
    },
    "direction": "SHORT",
-   "score": 63,
-   "plan_issue": "stop too wide (5.1 ATR)"
+   "score": 63
   }
  ],
  "errors": [],
@@ -993,16 +996,7 @@
  ],
  "news": {
   "macro_now": "Core PPI m/m released pre-market; waiting until 10:00 ET",
-  "upcoming": [
-   {
-    "title": "Core PPI m/m",
-    "dubai": "Fri 17:30"
-   },
-   {
-    "title": "PPI m/m",
-    "dubai": "Fri 17:30"
-   }
-  ]
+  "upcoming": []
  },
  "spreads": {
   "NVDA": {
