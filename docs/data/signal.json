@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-16T13:11:11+00:00",
- "updated_dubai": "Mon 16 Nov, 17:11",
+ "updated_utc": "2026-11-16T13:21:09+00:00",
+ "updated_dubai": "Mon 16 Nov, 17:21",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -14,9 +14,9 @@
     "market pre-market",
     "earnings next trading day"
    ],
-   "price": 158.04,
-   "bid": 158.02,
-   "ask": 158.06,
+   "price": 157.16,
+   "bid": 157.14,
+   "ask": 157.18,
    "spread": 0.04,
    "spread_pct": 0.025,
    "trend": "DOWN",
@@ -150,21 +150,20 @@
    "status": "NO TRADE",
    "blocks": [
     "market pre-market",
-    "spread too wide (0.12%)"
+    "spread too wide (0.16%)"
    ],
-   "price": 265.16,
-   "bid": 265.0,
-   "ask": 265.32,
-   "spread": 0.32,
-   "spread_pct": 0.121,
+   "price": 264.78,
+   "bid": 264.57,
+   "ask": 265.0,
+   "spread": 0.43,
+   "spread_pct": 0.162,
    "trend": "UP",
-   "vwap": 266.21,
-   "rsi7": 61.0,
-   "atr": 0.428,
+   "vwap": 266.2,
+   "rsi7": 62.0,
+   "atr": 0.424,
    "day_change": 0.0,
    "bar_utc": "2026-11-13T20:55:00+00:00",
    "spark": [
-    267.4,
     267.45,
     268.77,
     268.7,
@@ -231,6 +230,7 @@
     265.3,
     265.16,
     265.44,
+    265.39,
     265.34,
     265.46,
     265.42,
@@ -260,7 +260,7 @@
     "notes": [
      "1h trend UP",
      "broke the last swing high",
-     "volume 8.3\u00d7 normal",
+     "volume 8.4\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
@@ -278,32 +278,32 @@
     },
     "notes": [
      "1h trend UP",
-     "volume 8.3\u00d7 normal"
+     "volume 8.4\u00d7 normal"
     ]
    },
    "direction": "LONG",
    "score": 69,
-   "plan_issue": "stop too wide (6.0 ATR)"
+   "plan_issue": "stop too wide (8.1 ATR)"
   },
   {
    "sym": "TSLA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "market pre-market",
+    "spread too wide (0.16%)"
    ],
-   "price": 385.59,
-   "bid": 385.51,
-   "ask": 385.66,
-   "spread": 0.15,
-   "spread_pct": 0.039,
+   "price": 385.61,
+   "bid": 385.3,
+   "ask": 385.92,
+   "spread": 0.62,
+   "spread_pct": 0.161,
    "trend": "UP",
    "vwap": 391.2,
-   "rsi7": 43.0,
-   "atr": 1.004,
+   "rsi7": 42.0,
+   "atr": 0.996,
    "day_change": 0.0,
    "bar_utc": "2026-11-13T20:55:00+00:00",
    "spark": [
-    396.93,
     397.52,
     392.24,
     392.81,
@@ -370,6 +370,7 @@
     391.23,
     391.0,
     392.0,
+    391.64,
     390.86,
     390.9,
     390.6,
@@ -421,20 +422,21 @@
     ]
    },
    "direction": "LONG",
-   "score": 42
+   "score": 42,
+   "plan_issue": "stop too wide (5.0 ATR)"
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
     "market pre-market",
-    "spread too wide (0.14%)"
+    "spread too wide (0.24%)"
    ],
-   "price": 524.52,
-   "bid": 524.16,
-   "ask": 524.88,
-   "spread": 0.72,
-   "spread_pct": 0.137,
+   "price": 525.29,
+   "bid": 524.66,
+   "ask": 525.92,
+   "spread": 1.26,
+   "spread_pct": 0.24,
    "trend": "DOWN",
    "vwap": 522.36,
    "rsi7": 40.0,
@@ -562,19 +564,20 @@
    },
    "direction": "SHORT",
    "score": 58,
-   "plan_issue": "stop too wide (7.1 ATR)"
+   "plan_issue": "stop too wide (12.5 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "market pre-market",
+    "spread too wide (0.14%)"
    ],
-   "price": 637.33,
-   "bid": 637.01,
-   "ask": 637.64,
-   "spread": 0.63,
-   "spread_pct": 0.099,
+   "price": 638.13,
+   "bid": 637.69,
+   "ask": 638.58,
+   "spread": 0.89,
+   "spread_pct": 0.139,
    "trend": "UP",
    "vwap": 635.26,
    "rsi7": 66.0,
@@ -703,7 +706,7 @@
    },
    "direction": "LONG",
    "score": 62,
-   "plan_issue": "stop too wide (3.9 ATR)"
+   "plan_issue": "stop too wide (5.4 ATR)"
   }
  ],
  "errors": [],
