@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-16T17:11:04+00:00",
- "updated_dubai": "Mon 16 Nov, 21:11",
+ "updated_utc": "2026-11-16T17:21:07+00:00",
+ "updated_dubai": "Mon 16 Nov, 21:21",
  "market": {
   "phase": "open",
   "open": true,
@@ -14,20 +14,18 @@
     "Fed Chairman Warsh Speaks at 12:00 ET",
     "earnings next trading day"
    ],
-   "price": 158.36,
-   "bid": 158.35,
-   "ask": 158.37,
+   "price": 157.53,
+   "bid": 157.52,
+   "ask": 157.54,
    "spread": 0.02,
    "spread_pct": 0.013,
    "trend": "DOWN",
-   "vwap": 159.71,
-   "rsi7": 30.0,
-   "atr": 0.693,
-   "day_change": -2.64,
-   "bar_utc": "2026-11-16T17:05:00+00:00",
+   "vwap": 159.64,
+   "rsi7": 22.0,
+   "atr": 0.665,
+   "day_change": -3.04,
+   "bar_utc": "2026-11-16T17:15:00+00:00",
    "spark": [
-    160.46,
-    160.82,
     160.91,
     161.43,
     161.14,
@@ -103,48 +101,51 @@
     158.9,
     159.13,
     158.54,
-    158.36
+    158.36,
+    158.2,
+    157.72
    ],
    "next_earnings": "2026-11-17",
    "gap_pct": -2.26,
    "long": {
-    "score": 10,
+    "score": 16,
     "parts": {
      "trend": 0,
      "structure": 8,
      "sweep": 0,
      "momentum": 0,
      "vwap": 0,
-     "volume": 0,
+     "volume": 6,
      "volatility": 0,
      "session": 2
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.7\u00d7 normal",
+     "volume 1.5\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 59,
+    "score": 50,
     "parts": {
      "trend": 20,
      "structure": 7,
      "sweep": 0,
      "momentum": 15,
-     "vwap": 15,
-     "volume": 0,
+     "vwap": 0,
+     "volume": 6,
      "volatility": 0,
      "session": 2
     },
     "notes": [
      "1h trend DOWN",
      "broke the last swing low",
-     "volume 0.7\u00d7 normal"
+     "too far from VWAP (chasing)",
+     "volume 1.5\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 59
+   "score": 50
   },
   {
    "sym": "AMZN",
@@ -152,20 +153,18 @@
    "blocks": [
     "Fed Chairman Warsh Speaks at 12:00 ET"
    ],
-   "price": 259.13,
-   "bid": 259.12,
-   "ask": 259.15,
-   "spread": 0.03,
-   "spread_pct": 0.012,
+   "price": 258.45,
+   "bid": 258.43,
+   "ask": 258.47,
+   "spread": 0.04,
+   "spread_pct": 0.015,
    "trend": "NEUTRAL",
-   "vwap": 260.93,
-   "rsi7": 23.0,
-   "atr": 0.717,
-   "day_change": -2.73,
-   "bar_utc": "2026-11-16T17:05:00+00:00",
+   "vwap": 260.83,
+   "rsi7": 17.0,
+   "atr": 0.683,
+   "day_change": -3.02,
+   "bar_utc": "2026-11-16T17:15:00+00:00",
    "spark": [
-    265.22,
-    265.01,
     265.13,
     265.45,
     265.45,
@@ -241,7 +240,9 @@
     260.11,
     260.4,
     259.38,
-    259.2
+    259.2,
+    258.98,
+    258.44
    ],
    "next_earnings": "2027-02-04",
    "gap_pct": -1.56,
@@ -264,13 +265,13 @@
     ]
    },
    "short": {
-    "score": 54,
+    "score": 39,
     "parts": {
      "trend": 0,
      "structure": 7,
      "sweep": 0,
      "momentum": 15,
-     "vwap": 15,
+     "vwap": 0,
      "volume": 10,
      "volatility": 5,
      "session": 2
@@ -278,11 +279,13 @@
     "notes": [
      "1h trend NEUTRAL",
      "broke the last swing low",
+     "too far from VWAP (chasing)",
      "volume 1.7\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 54
+   "score": 39,
+   "plan_issue": "stop too wide (3.3 ATR)"
   },
   {
    "sym": "TSLA",
@@ -290,20 +293,18 @@
    "blocks": [
     "Fed Chairman Warsh Speaks at 12:00 ET"
    ],
-   "price": 380.13,
-   "bid": 380.05,
-   "ask": 380.22,
-   "spread": 0.17,
-   "spread_pct": 0.045,
+   "price": 378.92,
+   "bid": 378.88,
+   "ask": 378.96,
+   "spread": 0.08,
+   "spread_pct": 0.021,
    "trend": "NEUTRAL",
-   "vwap": 381.36,
-   "rsi7": 41.0,
-   "atr": 1.208,
-   "day_change": -2.48,
-   "bar_utc": "2026-11-16T17:05:00+00:00",
+   "vwap": 381.32,
+   "rsi7": 27.0,
+   "atr": 1.142,
+   "day_change": -2.78,
+   "bar_utc": "2026-11-16T17:15:00+00:00",
    "spark": [
-    391.06,
-    391.35,
     391.24,
     390.71,
     389.94,
@@ -379,47 +380,50 @@
     380.76,
     381.3,
     380.78,
-    380.45
+    380.45,
+    380.11,
+    379.29
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": -0.83,
    "long": {
-    "score": 15,
+    "score": 21,
     "parts": {
      "trend": 0,
      "structure": 8,
      "sweep": 0,
      "momentum": 0,
      "vwap": 0,
-     "volume": 0,
+     "volume": 6,
      "volatility": 5,
      "session": 2
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.6\u00d7 normal",
+     "volume 1.1\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 45,
+    "score": 58,
     "parts": {
      "trend": 0,
-     "structure": 8,
+     "structure": 15,
      "sweep": 0,
      "momentum": 15,
      "vwap": 15,
-     "volume": 0,
+     "volume": 6,
      "volatility": 5,
      "session": 2
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.6\u00d7 normal"
+     "broke the last swing low",
+     "volume 1.1\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 45
+   "score": 58
   },
   {
    "sym": "MSFT",
@@ -427,20 +431,18 @@
    "blocks": [
     "Fed Chairman Warsh Speaks at 12:00 ET"
    ],
-   "price": 523.63,
-   "bid": 523.52,
-   "ask": 523.75,
-   "spread": 0.23,
-   "spread_pct": 0.044,
+   "price": 523.1,
+   "bid": 523.02,
+   "ask": 523.17,
+   "spread": 0.15,
+   "spread_pct": 0.029,
    "trend": "DOWN",
-   "vwap": 522.57,
+   "vwap": 522.6,
    "rsi7": 40.0,
-   "atr": 1.316,
-   "day_change": -0.07,
-   "bar_utc": "2026-11-16T17:05:00+00:00",
+   "atr": 1.257,
+   "day_change": -0.1,
+   "bar_utc": "2026-11-16T17:15:00+00:00",
    "spark": [
-    523.91,
-    524.17,
     523.58,
     523.98,
     524.19,
@@ -516,12 +518,14 @@
     523.94,
     523.97,
     523.57,
-    523.31
+    523.31,
+    523.7,
+    523.18
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": 0.16,
    "long": {
-    "score": 23,
+    "score": 18,
     "parts": {
      "trend": 0,
      "structure": 8,
@@ -529,17 +533,17 @@
      "momentum": 0,
      "vwap": 8,
      "volume": 0,
-     "volatility": 5,
+     "volatility": 0,
      "session": 2
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.6\u00d7 normal",
+     "volume 0.8\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 35,
+    "score": 30,
     "parts": {
      "trend": 20,
      "structure": 0,
@@ -547,16 +551,16 @@
      "momentum": 8,
      "vwap": 0,
      "volume": 0,
-     "volatility": 5,
+     "volatility": 0,
      "session": 2
     },
     "notes": [
      "1h trend DOWN",
-     "volume 0.6\u00d7 normal"
+     "volume 0.8\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 35
+   "score": 30
   },
   {
    "sym": "META",
@@ -564,19 +568,18 @@
    "blocks": [
     "Fed Chairman Warsh Speaks at 12:00 ET"
    ],
-   "price": 628.08,
-   "bid": 627.95,
-   "ask": 628.2,
-   "spread": 0.25,
-   "spread_pct": 0.04,
+   "price": 627.5,
+   "bid": 627.43,
+   "ask": 627.57,
+   "spread": 0.14,
+   "spread_pct": 0.022,
    "trend": "NEUTRAL",
-   "vwap": 629.06,
-   "rsi7": 39.0,
-   "atr": 1.879,
-   "day_change": -2.23,
-   "bar_utc": "2026-11-16T17:05:00+00:00",
+   "vwap": 629.04,
+   "rsi7": 42.0,
+   "atr": 1.79,
+   "day_change": -2.22,
+   "bar_utc": "2026-11-16T17:15:00+00:00",
    "spark": [
-    632.17,
     633.78,
     633.25,
     633.76,
@@ -610,7 +613,6 @@
     640.04,
     640.25,
     641.06,
-    640.93,
     641.16,
     641.29,
     640.53,
@@ -653,7 +655,9 @@
     628.96,
     629.67,
     628.14,
-    627.63
+    627.63,
+    628.56,
+    627.74
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": -0.25,
@@ -671,15 +675,15 @@
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.4\u00d7 normal",
+     "volume 0.5\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 44,
+    "score": 52,
     "parts": {
      "trend": 0,
-     "structure": 7,
+     "structure": 15,
      "sweep": 0,
      "momentum": 15,
      "vwap": 15,
@@ -690,11 +694,11 @@
     "notes": [
      "1h trend NEUTRAL",
      "broke the last swing low",
-     "volume 0.4\u00d7 normal"
+     "volume 0.5\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 44
+   "score": 52
   }
  ],
  "errors": [],
