@@ -1,9 +1,9 @@
 {
- "updated_utc": "2026-11-17T14:21:07+00:00",
- "updated_dubai": "Tue 17 Nov, 18:21",
+ "updated_utc": "2026-11-17T14:31:29+00:00",
+ "updated_dubai": "Tue 17 Nov, 18:31",
  "market": {
-  "phase": "pre-market",
-  "open": false,
+  "phase": "open",
+  "open": true,
   "session_dubai": "18:30\u201301:00"
  },
  "stocks": [
@@ -11,15 +11,16 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core Retail Sales m/m released pre-market; waiting until 10:00 ET",
     "earnings today"
    ],
-   "price": 157.59,
-   "bid": 157.55,
-   "ask": 157.62,
-   "spread": 0.07,
-   "spread_pct": 0.044,
+   "price": 157.34,
+   "bid": 157.33,
+   "ask": 157.35,
+   "spread": 0.02,
+   "spread_pct": 0.013,
    "trend": "DOWN",
    "vwap": 157.95,
    "rsi7": 64.0,
@@ -152,15 +153,15 @@
    "sym": "AMZN",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "Core Retail Sales m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.12%)"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "Core Retail Sales m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 259.04,
-   "bid": 258.88,
-   "ask": 259.2,
-   "spread": 0.32,
-   "spread_pct": 0.123,
+   "price": 258.46,
+   "bid": 258.41,
+   "ask": 258.51,
+   "spread": 0.1,
+   "spread_pct": 0.039,
    "trend": "NEUTRAL",
    "vwap": 259.39,
    "rsi7": 41.0,
@@ -287,21 +288,21 @@
     ]
    },
    "direction": "SHORT",
-   "score": 50,
-   "plan_issue": "stop too wide (5.0 ATR)"
+   "score": 50
   },
   {
    "sym": "TSLA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core Retail Sales m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 381.66,
-   "bid": 381.52,
-   "ask": 381.8,
-   "spread": 0.28,
-   "spread_pct": 0.073,
+   "price": 380.01,
+   "bid": 379.92,
+   "ask": 380.1,
+   "spread": 0.18,
+   "spread_pct": 0.047,
    "trend": "NEUTRAL",
    "vwap": 379.88,
    "rsi7": 73.0,
@@ -434,14 +435,15 @@
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core Retail Sales m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 515.45,
-   "bid": 515.35,
-   "ask": 515.55,
-   "spread": 0.2,
-   "spread_pct": 0.039,
+   "price": 515.04,
+   "bid": 514.89,
+   "ask": 515.19,
+   "spread": 0.3,
+   "spread_pct": 0.058,
    "trend": "DOWN",
    "vwap": 520.86,
    "rsi7": 39.0,
@@ -569,20 +571,22 @@
    },
    "direction": "SHORT",
    "score": 63,
-   "plan_issue": "stop too wide (3.7 ATR)"
+   "plan_issue": "stop too wide (4.2 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "Core Retail Sales m/m released pre-market; waiting until 10:00 ET"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "Core Retail Sales m/m released pre-market; waiting until 10:00 ET",
+    "spread too wide (0.12%)"
    ],
-   "price": 620.16,
-   "bid": 620.0,
-   "ask": 620.32,
-   "spread": 0.32,
-   "spread_pct": 0.052,
+   "price": 620.97,
+   "bid": 620.59,
+   "ask": 621.34,
+   "spread": 0.75,
+   "spread_pct": 0.121,
    "trend": "DOWN",
    "vwap": 627.46,
    "rsi7": 50.0,
@@ -709,7 +713,7 @@
    },
    "direction": "SHORT",
    "score": 65,
-   "plan_issue": "stop too wide (5.5 ATR)"
+   "plan_issue": "stop too wide (5.1 ATR)"
   }
  ],
  "errors": [],
@@ -996,14 +1000,6 @@
  "news": {
   "macro_now": "Core Retail Sales m/m released pre-market; waiting until 10:00 ET",
   "upcoming": [
-   {
-    "title": "Core Retail Sales m/m",
-    "dubai": "Tue 17:30"
-   },
-   {
-    "title": "Retail Sales m/m",
-    "dubai": "Tue 17:30"
-   },
    {
     "title": "FOMC Meeting Minutes",
     "dubai": "Wed 23:00"
