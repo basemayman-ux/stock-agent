@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-18T20:11:07+00:00",
- "updated_dubai": "Thu 19 Nov, 00:11",
+ "updated_utc": "2026-11-18T20:21:08+00:00",
+ "updated_dubai": "Thu 19 Nov, 00:21",
  "market": {
   "phase": "open",
   "open": true,
@@ -13,20 +13,18 @@
    "blocks": [
     "FOMC Meeting Minutes today: no new trades from 30 min before until the close"
    ],
-   "price": 151.36,
-   "bid": 151.35,
-   "ask": 151.37,
+   "price": 150.71,
+   "bid": 150.7,
+   "ask": 150.72,
    "spread": 0.02,
    "spread_pct": 0.013,
    "trend": "DOWN",
-   "vwap": 153.43,
-   "rsi7": 49.0,
-   "atr": 0.448,
-   "day_change": -2.63,
-   "bar_utc": "2026-11-18T20:05:00+00:00",
+   "vwap": 153.38,
+   "rsi7": 35.0,
+   "atr": 0.439,
+   "day_change": -2.92,
+   "bar_utc": "2026-11-18T20:15:00+00:00",
    "spark": [
-    153.04,
-    153.29,
     153.51,
     153.48,
     153.52,
@@ -102,7 +100,9 @@
     150.69,
     150.72,
     150.96,
-    151.17
+    151.17,
+    151.04,
+    150.73
    ],
    "next_earnings": "2027-02-24",
    "gap_pct": 2.52,
@@ -120,17 +120,18 @@
     },
     "notes": [
      "1h trend DOWN",
-     "swept 150.81 and reclaimed it",
-     "volume 0.9\u00d7 normal"
+     "swept 150.53 and reclaimed it",
+     "volume 1.0\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 45,
+    "score": 53,
     "parts": {
      "trend": 20,
      "structure": 8,
      "sweep": 0,
-     "momentum": 7,
+     "momentum": 15,
      "vwap": 0,
      "volume": 0,
      "volatility": 5,
@@ -139,12 +140,11 @@
     "notes": [
      "1h trend DOWN",
      "too far from VWAP (chasing)",
-     "volume 0.9\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 1.0\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 45
+   "score": 53
   },
   {
    "sym": "AMZN",
@@ -152,20 +152,18 @@
    "blocks": [
     "FOMC Meeting Minutes today: no new trades from 30 min before until the close"
    ],
-   "price": 267.1,
-   "bid": 267.09,
-   "ask": 267.1,
-   "spread": 0.01,
-   "spread_pct": 0.004,
+   "price": 266.31,
+   "bid": 266.29,
+   "ask": 266.32,
+   "spread": 0.03,
+   "spread_pct": 0.011,
    "trend": "UP",
-   "vwap": 264.59,
-   "rsi7": 47.0,
-   "atr": 0.508,
-   "day_change": 3.67,
-   "bar_utc": "2026-11-18T20:05:00+00:00",
+   "vwap": 264.64,
+   "rsi7": 29.0,
+   "atr": 0.521,
+   "day_change": 3.43,
+   "bar_utc": "2026-11-18T20:15:00+00:00",
    "spark": [
-    256.76,
-    257.3,
     257.28,
     257.16,
     257.63,
@@ -241,17 +239,19 @@
     267.43,
     267.3,
     267.28,
-    267.19
+    267.19,
+    267.12,
+    266.57
    ],
    "next_earnings": "2027-02-04",
    "gap_pct": 0.72,
    "long": {
-    "score": 37,
+    "score": 30,
     "parts": {
      "trend": 20,
      "structure": 0,
      "sweep": 0,
-     "momentum": 7,
+     "momentum": 0,
      "vwap": 0,
      "volume": 0,
      "volatility": 5,
@@ -260,15 +260,15 @@
     "notes": [
      "1h trend UP",
      "too far from VWAP (chasing)",
-     "volume 0.9\u00d7 normal",
+     "volume 0.8\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 26,
+    "score": 33,
     "parts": {
      "trend": 0,
-     "structure": 8,
+     "structure": 15,
      "sweep": 0,
      "momentum": 8,
      "vwap": 0,
@@ -278,11 +278,12 @@
     },
     "notes": [
      "1h trend UP",
-     "volume 0.9\u00d7 normal"
+     "broke the last swing low",
+     "volume 0.8\u00d7 normal"
     ]
    },
-   "direction": "LONG",
-   "score": 37
+   "direction": "SHORT",
+   "score": 33
   },
   {
    "sym": "TSLA",
@@ -291,20 +292,18 @@
     "FOMC Meeting Minutes today: no new trades from 30 min before until the close",
     "already had a signal today"
    ],
-   "price": 384.38,
-   "bid": 384.29,
-   "ask": 384.48,
-   "spread": 0.19,
-   "spread_pct": 0.049,
+   "price": 383.31,
+   "bid": 383.26,
+   "ask": 383.36,
+   "spread": 0.1,
+   "spread_pct": 0.026,
    "trend": "NEUTRAL",
-   "vwap": 382.84,
-   "rsi7": 61.0,
-   "atr": 0.973,
-   "day_change": 1.12,
-   "bar_utc": "2026-11-18T20:05:00+00:00",
+   "vwap": 382.86,
+   "rsi7": 46.0,
+   "atr": 0.946,
+   "day_change": 0.93,
+   "bar_utc": "2026-11-18T20:15:00+00:00",
    "spark": [
-    378.45,
-    379.18,
     379.22,
     378.59,
     380.12,
@@ -380,17 +379,19 @@
     383.4,
     383.23,
     384.0,
-    384.23
+    384.23,
+    384.34,
+    383.5
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": 1.36,
    "long": {
-    "score": 35,
+    "score": 20,
     "parts": {
      "trend": 0,
      "structure": 0,
      "sweep": 0,
-     "momentum": 15,
+     "momentum": 0,
      "vwap": 15,
      "volume": 0,
      "volatility": 0,
@@ -398,16 +399,17 @@
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.9\u00d7 normal"
+     "volume 0.6\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 13,
+    "score": 21,
     "parts": {
      "trend": 0,
      "structure": 8,
      "sweep": 0,
-     "momentum": 0,
+     "momentum": 8,
      "vwap": 0,
      "volume": 0,
      "volatility": 0,
@@ -415,12 +417,11 @@
     },
     "notes": [
      "1h trend NEUTRAL",
-     "volume 0.9\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 0.6\u00d7 normal"
     ]
    },
-   "direction": "LONG",
-   "score": 35
+   "direction": "SHORT",
+   "score": 21
   },
   {
    "sym": "MSFT",
@@ -428,20 +429,18 @@
    "blocks": [
     "FOMC Meeting Minutes today: no new trades from 30 min before until the close"
    ],
-   "price": 507.77,
-   "bid": 507.71,
-   "ask": 507.83,
-   "spread": 0.12,
-   "spread_pct": 0.024,
+   "price": 505.62,
+   "bid": 505.55,
+   "ask": 505.7,
+   "spread": 0.15,
+   "spread_pct": 0.03,
    "trend": "DOWN",
-   "vwap": 505.29,
-   "rsi7": 50.0,
-   "atr": 0.977,
-   "day_change": 0.39,
-   "bar_utc": "2026-11-18T20:05:00+00:00",
+   "vwap": 505.34,
+   "rsi7": 28.0,
+   "atr": 1.005,
+   "day_change": 0.04,
+   "bar_utc": "2026-11-18T20:15:00+00:00",
    "spark": [
-    505.72,
-    506.12,
     505.55,
     505.34,
     506.39,
@@ -517,49 +516,51 @@
     508.29,
     507.87,
     508.0,
-    507.96
+    507.96,
+    507.74,
+    506.22
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": -0.24,
    "long": {
-    "score": 20,
+    "score": 27,
     "parts": {
      "trend": 0,
      "structure": 8,
      "sweep": 0,
-     "momentum": 7,
-     "vwap": 0,
-     "volume": 0,
+     "momentum": 0,
+     "vwap": 8,
+     "volume": 6,
      "volatility": 0,
      "session": 5
     },
     "notes": [
      "1h trend DOWN",
-     "too far from VWAP (chasing)",
-     "volume 1.0\u00d7 normal",
+     "volume 1.5\u00d7 normal",
      "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 48,
+    "score": 69,
     "parts": {
      "trend": 20,
-     "structure": 8,
+     "structure": 15,
      "sweep": 15,
-     "momentum": 0,
+     "momentum": 8,
      "vwap": 0,
-     "volume": 0,
+     "volume": 6,
      "volatility": 0,
      "session": 5
     },
     "notes": [
      "1h trend DOWN",
+     "broke the last swing low",
      "swept 508.30 and reclaimed it",
-     "volume 1.0\u00d7 normal"
+     "volume 1.5\u00d7 normal"
     ]
    },
    "direction": "SHORT",
-   "score": 48
+   "score": 69
   },
   {
    "sym": "META",
@@ -568,20 +569,18 @@
     "FOMC Meeting Minutes today: no new trades from 30 min before until the close",
     "already had a signal today"
    ],
-   "price": 615.68,
-   "bid": 615.55,
-   "ask": 615.82,
-   "spread": 0.27,
-   "spread_pct": 0.044,
+   "price": 614.75,
+   "bid": 614.66,
+   "ask": 614.85,
+   "spread": 0.19,
+   "spread_pct": 0.031,
    "trend": "DOWN",
    "vwap": 615.7,
-   "rsi7": 59.0,
-   "atr": 1.132,
-   "day_change": -0.46,
-   "bar_utc": "2026-11-18T20:05:00+00:00",
+   "rsi7": 44.0,
+   "atr": 1.103,
+   "day_change": -0.58,
+   "bar_utc": "2026-11-18T20:15:00+00:00",
    "spark": [
-    619.98,
-    620.67,
     621.76,
     621.2,
     622.69,
@@ -657,48 +656,49 @@
     614.84,
     615.02,
     615.45,
-    615.72
+    615.72,
+    615.72,
+    615.0
    ],
    "next_earnings": "2027-01-27",
    "gap_pct": 0.11,
    "long": {
-    "score": 62,
+    "score": 18,
     "parts": {
      "trend": 0,
      "structure": 8,
-     "sweep": 15,
-     "momentum": 8,
-     "vwap": 15,
-     "volume": 6,
+     "sweep": 0,
+     "momentum": 0,
+     "vwap": 0,
+     "volume": 0,
      "volatility": 5,
      "session": 5
     },
     "notes": [
      "1h trend DOWN",
-     "swept 615.10 and reclaimed it",
-     "volume 1.3\u00d7 normal"
+     "volume 0.9\u00d7 normal",
+     "last bar not in trade direction"
     ]
    },
    "short": {
-    "score": 36,
+    "score": 60,
     "parts": {
      "trend": 20,
      "structure": 0,
      "sweep": 0,
-     "momentum": 0,
-     "vwap": 0,
-     "volume": 6,
+     "momentum": 15,
+     "vwap": 15,
+     "volume": 0,
      "volatility": 5,
      "session": 5
     },
     "notes": [
      "1h trend DOWN",
-     "volume 1.3\u00d7 normal",
-     "last bar not in trade direction"
+     "volume 0.9\u00d7 normal"
     ]
    },
-   "direction": "LONG",
-   "score": 62
+   "direction": "SHORT",
+   "score": 60
   }
  ],
  "errors": [],
