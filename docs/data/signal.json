@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-19T14:11:12+00:00",
- "updated_dubai": "Thu 19 Nov, 18:11",
+ "updated_utc": "2026-11-19T14:21:14+00:00",
+ "updated_dubai": "Thu 19 Nov, 18:21",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -13,11 +13,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 153.13,
-   "bid": 153.12,
-   "ask": 153.15,
-   "spread": 0.03,
-   "spread_pct": 0.02,
+   "price": 153.0,
+   "bid": 152.97,
+   "ask": 153.03,
+   "spread": 0.06,
+   "spread_pct": 0.039,
    "trend": "DOWN",
    "vwap": 153.1,
    "rsi7": 45.0,
@@ -151,11 +151,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 271.75,
-   "bid": 271.71,
-   "ask": 271.8,
-   "spread": 0.09,
-   "spread_pct": 0.033,
+   "price": 272.59,
+   "bid": 272.5,
+   "ask": 272.67,
+   "spread": 0.17,
+   "spread_pct": 0.062,
    "trend": "UP",
    "vwap": 265.12,
    "rsi7": 62.0,
@@ -285,7 +285,7 @@
    },
    "direction": "LONG",
    "score": 77,
-   "plan_issue": "stop too wide (10.2 ATR)"
+   "plan_issue": "stop too wide (11.6 ATR)"
   },
   {
    "sym": "TSLA",
@@ -293,11 +293,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 392.55,
-   "bid": 392.45,
-   "ask": 392.65,
-   "spread": 0.2,
-   "spread_pct": 0.051,
+   "price": 391.73,
+   "bid": 391.5,
+   "ask": 391.95,
+   "spread": 0.45,
+   "spread_pct": 0.115,
    "trend": "NEUTRAL",
    "vwap": 383.0,
    "rsi7": 49.0,
@@ -424,19 +424,20 @@
    },
    "direction": "LONG",
    "score": 45,
-   "plan_issue": "stop too wide (9.8 ATR)"
+   "plan_issue": "stop too wide (9.1 ATR)"
   },
   {
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "market pre-market",
+    "spread too wide (0.16%)"
    ],
-   "price": 516.41,
-   "bid": 516.17,
-   "ask": 516.66,
-   "spread": 0.49,
-   "spread_pct": 0.095,
+   "price": 516.59,
+   "bid": 516.16,
+   "ask": 517.01,
+   "spread": 0.85,
+   "spread_pct": 0.164,
    "trend": "DOWN",
    "vwap": 505.86,
    "rsi7": 66.0,
@@ -563,20 +564,19 @@
    },
    "direction": "LONG",
    "score": 52,
-   "plan_issue": "stop too wide (10.2 ATR)"
+   "plan_issue": "stop too wide (10.6 ATR)"
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "spread too wide (0.14%)"
+    "market pre-market"
    ],
    "price": 626.2,
-   "bid": 625.77,
-   "ask": 626.63,
-   "spread": 0.86,
-   "spread_pct": 0.137,
+   "bid": 625.91,
+   "ask": 626.5,
+   "spread": 0.59,
+   "spread_pct": 0.094,
    "trend": "DOWN",
    "vwap": 615.73,
    "rsi7": 60.0,
@@ -703,7 +703,7 @@
    },
    "direction": "LONG",
    "score": 50,
-   "plan_issue": "stop too wide (9.9 ATR)"
+   "plan_issue": "stop too wide (9.8 ATR)"
   }
  ],
  "errors": [],
