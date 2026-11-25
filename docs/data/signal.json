@@ -1,9 +1,9 @@
 {
- "updated_utc": "2026-11-25T14:21:05+00:00",
- "updated_dubai": "Wed 25 Nov, 18:21",
+ "updated_utc": "2026-11-25T14:31:25+00:00",
+ "updated_dubai": "Wed 25 Nov, 18:31",
  "market": {
-  "phase": "pre-market",
-  "open": false,
+  "phase": "open",
+  "open": true,
   "session_dubai": "18:30\u201301:00"
  },
  "stocks": [
@@ -11,14 +11,15 @@
    "sym": "NVDA",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 146.29,
-   "bid": 146.24,
-   "ask": 146.33,
-   "spread": 0.09,
-   "spread_pct": 0.062,
+   "price": 142.28,
+   "bid": 142.26,
+   "ask": 142.31,
+   "spread": 0.05,
+   "spread_pct": 0.035,
    "trend": "DOWN",
    "vwap": 153.5,
    "rsi7": 83.0,
@@ -150,15 +151,15 @@
    "sym": "AMZN",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.18%)"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 242.52,
-   "bid": 242.3,
-   "ask": 242.74,
-   "spread": 0.44,
-   "spread_pct": 0.181,
+   "price": 242.21,
+   "bid": 242.16,
+   "ask": 242.26,
+   "spread": 0.1,
+   "spread_pct": 0.041,
    "trend": "DOWN",
    "vwap": 252.46,
    "rsi7": 66.0,
@@ -286,20 +287,21 @@
    },
    "direction": "SHORT",
    "score": 58,
-   "plan_issue": "stop too wide (18.8 ATR)"
+   "plan_issue": "stop too wide (19.1 ATR)"
   },
   {
    "sym": "TSLA",
-   "status": "NO TRADE",
+   "status": "WATCH",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 370.58,
-   "bid": 370.51,
-   "ask": 370.65,
-   "spread": 0.14,
-   "spread_pct": 0.038,
+   "price": 363.21,
+   "bid": 363.05,
+   "ask": 363.37,
+   "spread": 0.32,
+   "spread_pct": 0.088,
    "trend": "UP",
    "vwap": 382.51,
    "rsi7": 65.0,
@@ -431,15 +433,15 @@
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
-    "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.14%)"
+    "first 15 min of the session",
+    "price data 1051 min old",
+    "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET"
    ],
-   "price": 480.52,
-   "bid": 480.18,
-   "ask": 480.87,
-   "spread": 0.69,
-   "spread_pct": 0.143,
+   "price": 484.82,
+   "bid": 484.69,
+   "ask": 484.95,
+   "spread": 0.26,
+   "spread_pct": 0.054,
    "trend": "DOWN",
    "vwap": 494.93,
    "rsi7": 84.0,
@@ -565,22 +567,22 @@
     ]
    },
    "direction": "LONG",
-   "score": 58,
-   "plan_issue": "stop too wide (6.0 ATR)"
+   "score": 58
   },
   {
    "sym": "META",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market",
+    "first 15 min of the session",
+    "price data 1051 min old",
     "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET",
-    "spread too wide (0.13%)"
+    "spread too wide (0.12%)"
    ],
-   "price": 578.75,
-   "bid": 578.37,
-   "ask": 579.12,
-   "spread": 0.75,
-   "spread_pct": 0.13,
+   "price": 572.77,
+   "bid": 572.42,
+   "ask": 573.12,
+   "spread": 0.7,
+   "spread_pct": 0.122,
    "trend": "DOWN",
    "vwap": 591.47,
    "rsi7": 53.0,
@@ -708,7 +710,7 @@
    },
    "direction": "SHORT",
    "score": 70,
-   "plan_issue": "stop too wide (9.6 ATR)"
+   "plan_issue": "stop too wide (13.9 ATR)"
   }
  ],
  "errors": [],
@@ -994,16 +996,7 @@
  ],
  "news": {
   "macro_now": "Core PCE Price Index m/m released pre-market; waiting until 10:00 ET",
-  "upcoming": [
-   {
-    "title": "Core PCE Price Index m/m",
-    "dubai": "Wed 17:30"
-   },
-   {
-    "title": "Prelim GDP q/q",
-    "dubai": "Wed 17:30"
-   }
-  ]
+  "upcoming": []
  },
  "spreads": {
   "NVDA": {
