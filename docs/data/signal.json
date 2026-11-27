@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-11-27T14:10:57+00:00",
- "updated_dubai": "Fri 27 Nov, 18:10",
+ "updated_utc": "2026-11-27T14:21:10+00:00",
+ "updated_dubai": "Fri 27 Nov, 18:21",
  "market": {
   "phase": "pre-market",
   "open": false,
@@ -13,11 +13,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 152.55,
-   "bid": 152.5,
-   "ask": 152.59,
-   "spread": 0.09,
-   "spread_pct": 0.059,
+   "price": 152.11,
+   "bid": 152.07,
+   "ask": 152.15,
+   "spread": 0.08,
+   "spread_pct": 0.053,
    "trend": "DOWN",
    "vwap": 144.83,
    "rsi7": 75.0,
@@ -152,9 +152,9 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 250.16,
-   "bid": 250.04,
-   "ask": 250.29,
+   "price": 250.12,
+   "bid": 250.0,
+   "ask": 250.25,
    "spread": 0.25,
    "spread_pct": 0.1,
    "trend": "DOWN",
@@ -291,11 +291,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 390.08,
-   "bid": 390.01,
-   "ask": 390.15,
-   "spread": 0.14,
-   "spread_pct": 0.036,
+   "price": 389.74,
+   "bid": 389.6,
+   "ask": 389.87,
+   "spread": 0.27,
+   "spread_pct": 0.069,
    "trend": "NEUTRAL",
    "vwap": 369.94,
    "rsi7": 40.0,
@@ -427,13 +427,14 @@
    "sym": "MSFT",
    "status": "NO TRADE",
    "blocks": [
-    "market pre-market"
+    "market pre-market",
+    "spread too wide (0.13%)"
    ],
-   "price": 497.84,
-   "bid": 497.68,
-   "ask": 498.0,
-   "spread": 0.32,
-   "spread_pct": 0.064,
+   "price": 497.77,
+   "bid": 497.45,
+   "ask": 498.09,
+   "spread": 0.64,
+   "spread_pct": 0.128,
    "trend": "DOWN",
    "vwap": 484.9,
    "rsi7": 48.0,
@@ -559,7 +560,8 @@
     ]
    },
    "direction": "SHORT",
-   "score": 48
+   "score": 48,
+   "plan_issue": "stop too wide (4.0 ATR)"
   },
   {
    "sym": "META",
@@ -567,11 +569,11 @@
    "blocks": [
     "market pre-market"
    ],
-   "price": 627.68,
-   "bid": 627.38,
-   "ask": 627.99,
-   "spread": 0.61,
-   "spread_pct": 0.097,
+   "price": 627.22,
+   "bid": 627.0,
+   "ask": 627.44,
+   "spread": 0.44,
+   "spread_pct": 0.07,
    "trend": "NEUTRAL",
    "vwap": 592.53,
    "rsi7": 74.0,
@@ -699,7 +701,7 @@
    },
    "direction": "LONG",
    "score": 42,
-   "plan_issue": "stop too wide (11.4 ATR)"
+   "plan_issue": "stop too wide (11.2 ATR)"
   }
  ],
  "errors": [],
